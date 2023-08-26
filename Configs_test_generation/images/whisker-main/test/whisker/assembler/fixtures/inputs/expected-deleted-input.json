@@ -1,0 +1,15 @@
+{
+    "type": "Input",
+    "input": [
+        1,
+        null
+    ],
+    "blocks": {},
+    "lists": {},
+    "stageLists": {},
+    "variables": {},
+    "stageVariables": {},
+    "broadcasts": {},
+    "shadow": false,
+    "obscured": false
+}

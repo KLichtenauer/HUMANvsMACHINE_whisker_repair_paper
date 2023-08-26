@@ -1,0 +1,106 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687936642505',
+  headless: true,
+  configPath: '/configs/mio.json-repetition-3.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/11-Snake.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 11-Snake.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687936642505
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687936642505
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: ;zMGyP=l%DS/PovsNFjm-Kopf of type event_whenkeypressed
+ INFO:  Forwarded: DEBUG: Found test for goal: zz2X7gg9+RUqkMr/G?9[-Kopf of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: vU[D*Fm2+vx5gqv!}%%/-Kopf of type event_whenkeypressed
+ INFO:  Forwarded: DEBUG: Found test for goal: Pb2X)|V|O47;*6U@$0Ow-Kopf of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: b!WL,FNgf}|N)|bxb!*`-Kopf of type event_whenkeypressed
+ INFO:  Forwarded: DEBUG: Found test for goal: UgD:`8F?VB/w]7ZOY4Xo-Kopf of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: l_)*{%?It,XwI9JEU_-f-Kopf of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: oL4[[/qoCu-_Dm9d_(jc-Kopf of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: GU|eD?;Yh^JJETGn$p?4-Kopf of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: gC0!F7@Y0#l#VT{+anID-Kopf of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: /K{0EBVU*c~~BjiQEPzZ-Kopf of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: Du7Iga[tY)?5An!x{H88-Kopf of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: ~%w3mZ%q7XIRJv2Cr,o--Kopf of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: yQ4oSH=`;8VM^!+ZGjm.-Kopf of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: c{sp|9#gJt=JA3y=nY(o-Kopf of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 2q=)k:4Xv!gL*-{17_t`-Kopf of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: R-qF~lZpCWi%uz*FiL@4-Kopf of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: mbTi8-I6b%j4jo?)Tvid-Kopf of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: `GUQ/81AM45nj=rm5bnB-Kopf of type sound_play
+ INFO:  Forwarded: DEBUG: Found test for goal: $*^TyBWs}ZwtgO?g+DSN-Kopf of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: YO+^|e]3]#!Pf5cy@d@E-Kopf of type control_stop
+ INFO:  Forwarded: DEBUG: Found test for goal: QI;:OCQ96fkG#@s$6GVH-Körper of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: *yO3UYLfUJ*%!X22QKan-Körper of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: DWdA@mUf#?.$-]n-XId.-Körper of type motion_goto
+ INFO:  Forwarded: DEBUG: Found test for goal: kiPJbIRR~%:H5zF71`b,-Körper of type control_create_clone_of
+ INFO:  Forwarded: DEBUG: Found test for goal: |P{,)j6Wo-7g{]J/gtz0-Körper of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: %Y?0wDIi;6pBKFNn8wO^-Körper of type control_delete_this_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: 0irK52?l~21m2(!0-A4+-Körper of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: g:[o.SJBVj~3H94D-{vb-Punkt of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: -w71Nq7I;F)161=R1JQy-Punkt of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: g_2_AWU2gXc%g]zb%z:d-Punkt of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: gsy^rymX7K*oad|%jw+6-Punkt of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: Ay`h$l#amKP*xlbg9!e.-Goodie of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: :A$dzU`j93[m,$N-=s#z-Goodie of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: HI4iow!_Ju|*+1=9@|S6-Goodie of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: yV~/yn,jY=U1_i!E?-Ya-Goodie of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: t#^j8T{;FOB+BUdNUqUa-Goodie of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: AA!=:~B}V*e-Sc0xgP,A-Goodie of type control_if
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 38/59, open independent goals: 9
+ INFO:  Forwarded: DEBUG: Found test for goal: z=pVb,BdUa;*wpI4LP:`-Kopf of type event_whenkeypressed
+ INFO:  Forwarded: DEBUG: Found test for goal: J-#B|_D#CZP;T1[xY-3i-Kopf of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: ;u0C-g|TY^qYFDzs8tV%-Kopf of type sound_play
+ INFO:  Forwarded: DEBUG: Found test for goal: +sI[))T!Q+;6j#58]zA?-Kopf of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: CCfuSYj9eGl7)q!58U`O-Punkt of type sound_play
+ INFO:  Forwarded: DEBUG: Found test for goal: #.nsf]/-Xvn2maY7P).J-Punkt of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: 5wNs7+QC$.03A;j0jOd?-Punkt of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Iteration 2, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 3, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 4, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 5, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 6, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 7, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 8, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 9, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 10, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Iteration 11, covered goals total: 45/59, open independent goals: 6
+ INFO:  Forwarded: DEBUG: Found test for goal: !LFB#vxh`ZA]}m|-(BRH-Kopf of type control_stop
+ INFO:  Forwarded: DEBUG: Iteration 12, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 13, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 14, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 15, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 16, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 17, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 18, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 20, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 21, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 23, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 24, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 25, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 26, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 27, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 28, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 29, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 32, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 33, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 34, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 35, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 38, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 41, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 42, covered goals total: 46/59, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Starting minimization for 2 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 78 events and a time-limit of Infinity

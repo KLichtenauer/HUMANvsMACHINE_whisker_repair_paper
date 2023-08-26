@@ -1,0 +1,220 @@
+{
+    "type": "Input",
+    "input": [
+        2,
+        "Glide1SecsToMousePtr"
+    ],
+    "blocks": {
+        "Glide1SecsToMousePtr": {
+            "opcode": "motion_glideto",
+            "next": "GlideToMousePtr",
+            "parent": null,
+            "inputs": {
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    "DropDownMenu1"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "DropDownMenu1": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": "Glide1SecsToMousePtr",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "GlideToMousePtr": {
+            "opcode": "motion_glideto",
+            "next": "GlideVarToMousePtr",
+            "parent": "Glide1SecsToMousePtr",
+            "inputs": {
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        ""
+                    ]
+                ],
+                "TO": [
+                    1,
+                    "DropDownMenu2"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "GlideVarToMousePtr": {
+            "opcode": "motion_glideto",
+            "next": "Glide1SecsToVar",
+            "parent": "GlideToMousePtr",
+            "inputs": {
+                "SECS": [
+                    3,
+                    [
+                        12,
+                        "my variable",
+                        "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                    ],
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TO": [
+                    1,
+                    "DropDownMenu3"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Glide1SecsToVar": {
+            "opcode": "motion_glideto",
+            "next": "GlideVarToVar",
+            "parent": "GlideVarToMousePtr",
+            "inputs": {
+                "SECS": [
+                    1,
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TO": [
+                    3,
+                    [
+                        12,
+                        "my variable",
+                        "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                    ],
+                    "DropDownMenu4"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "GlideVarToVar": {
+            "opcode": "motion_glideto",
+            "next": null,
+            "parent": "Glide1SecsToVar",
+            "inputs": {
+                "SECS": [
+                    3,
+                    [
+                        12,
+                        "my variable",
+                        "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                    ],
+                    [
+                        4,
+                        "1"
+                    ]
+                ],
+                "TO": [
+                    3,
+                    [
+                        12,
+                        "my variable",
+                        "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                    ],
+                    "DropDownMenu5"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "DropDownMenu2": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": "GlideToMousePtr",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_mouse_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "DropDownMenu3": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": "GlideVarToMousePtr",
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        },
+        "DropDownMenu4": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": true,
+            "x": 273,
+            "y": 392
+        },
+        "DropDownMenu5": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": true,
+            "x": 339,
+            "y": 440
+        }
+    },
+    "lists": {},
+    "stageLists": {},
+    "variables": {},
+    "stageVariables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+            "my variable",
+            0
+        ]
+    },
+    "broadcasts": {},
+    "shadow": false,
+    "obscured": false
+}

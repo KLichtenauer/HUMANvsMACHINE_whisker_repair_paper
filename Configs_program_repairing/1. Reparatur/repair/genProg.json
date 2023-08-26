@@ -1,0 +1,73 @@
+{
+    "repair": true,
+    "logs": {
+        "debug": true,
+        "reduceSpam": true
+    },
+    "algorithm": {
+        "kind": "genProg",
+        "populationSize": 16,
+        "operatorOrder": "crossover then mutation",
+        "elitismSize": 2
+    },
+    "fitnessFunction": {
+        "kind": "defaultFitness",
+        "timeout": 240000
+    },
+    "stoppingCondition": {
+        "kind": "combined",
+        "conditions": [
+            {
+                "kind": "optimal"
+            },
+            {
+                "kind": "fixedTime",
+                "duration": 11988000
+            }
+        ]
+    },
+    "initialVariants": {
+        "chromosome": {
+            "kind": "repair"
+        },
+        "generator": {
+            "kind": "mutating"
+        }
+    },
+    "mutation": {
+        "kind": "esMutation",
+        "suspiciousness": "dstar2",
+        "operators": [
+            "deleteStatement",
+            "deleteExpression",
+            "switchDropDownValue",
+            "duplicateStatement",
+            "moveExpression",
+            "moveStatement",
+            "swapStatements",
+            "swapExpressions",
+            "replaceStatement",
+            "replaceExpression",
+            "unwrapStack",
+            "wrapStack"
+        ],
+        "probability": {
+            "insertion": 0.3333333333333333,
+            "deletion": 0.3333333333333333,
+            "change": 0.3333333333333333
+        }
+    },
+    "crossover": {
+        "kind": "repair",
+        "suspiciousness": "dstar2",
+        "operators": [
+            "exchangeSimilarTargets"
+        ],
+        "probability": 0.7,
+        "headlessChicken": false
+    },
+    "selection": {
+        "kind": "rank"
+    },
+    "subsumeNegativeTestResults": true
+}

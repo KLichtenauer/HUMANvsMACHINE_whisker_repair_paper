@@ -1,0 +1,143 @@
+{
+    "WhenFlagClicked": {
+        "opcode": "event_whenflagclicked",
+        "next": "DataSetVariableTo",
+        "parent": null,
+        "inputs": {},
+        "fields": {},
+        "topLevel": true,
+        "shadow": false,
+        "x": 67,
+        "y": 63
+    },
+    "DataSetVariableTo": {
+        "opcode": "data_setvariableto",
+        "next": "tp4]fMOcW`%%3ZY9P4Tj",
+        "parent": "WhenFlagClicked",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    "30"
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Zeit",
+                "-uNS_EC`{c}8[Fko^Ftm-Zeit-"
+            ]
+        },
+        "topLevel": false,
+        "shadow": false
+    },
+    "tp4]fMOcW`%%3ZY9P4Tj": {
+        "opcode": "data_setvariableto",
+        "next": "ControlRepeatUntil",
+        "parent": "DataSetVariableTo",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    10,
+                    0
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Punkte",
+                "-uNS_EC`{c}8[Fko^Ftm-Punkte-"
+            ]
+        },
+        "topLevel": false,
+        "shadow": false
+    },
+    "ControlRepeatUntil": {
+        "opcode": "control_repeat_until",
+        "next": null,
+        "parent": "tp4]fMOcW`%%3ZY9P4Tj",
+        "inputs": {
+            "CONDITION": [
+                2,
+                "PVHW2LYWgXrg78^|Iyuh"
+            ],
+            "SUBSTACK": [
+                2,
+                "80J0br2rW:]]-Kbi#xMn"
+            ]
+        },
+        "fields": {},
+        "topLevel": false,
+        "shadow": false
+    },
+    "PVHW2LYWgXrg78^|Iyuh": {
+        "opcode": "operator_equals",
+        "next": null,
+        "parent": "ControlRepeatUntil",
+        "inputs": {
+            "OPERAND1": [
+                3,
+                [
+                    12,
+                    "Zeit",
+                    "-uNS_EC`{c}8[Fko^Ftm-Zeit-"
+                ],
+                [
+                    10,
+                    ""
+                ]
+            ],
+            "OPERAND2": [
+                1,
+                [
+                    10,
+                    "0"
+                ]
+            ]
+        },
+        "fields": {},
+        "topLevel": false,
+        "shadow": false
+    },
+    "80J0br2rW:]]-Kbi#xMn": {
+        "opcode": "control_wait",
+        "next": "Z;(a6^hu!1qVW9eGuP/~",
+        "parent": "ControlRepeatUntil",
+        "inputs": {
+            "DURATION": [
+                1,
+                [
+                    5,
+                    1
+                ]
+            ]
+        },
+        "fields": {},
+        "topLevel": false,
+        "shadow": false
+    },
+    "Z;(a6^hu!1qVW9eGuP/~": {
+        "opcode": "data_changevariableby",
+        "next": null,
+        "parent": "80J0br2rW:]]-Kbi#xMn",
+        "inputs": {
+            "VALUE": [
+                1,
+                [
+                    4,
+                    -1
+                ]
+            ]
+        },
+        "fields": {
+            "VARIABLE": [
+                "Zeit",
+                "-uNS_EC`{c}8[Fko^Ftm-Zeit-"
+            ]
+        },
+        "topLevel": false,
+        "shadow": false
+    }
+}

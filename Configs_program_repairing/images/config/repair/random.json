@@ -1,0 +1,58 @@
+{
+    "repair": true,
+    "logs": {
+        "debug": true,
+        "reduceSpam": true
+    },
+    "algorithm": {
+        "kind": "random"
+    },
+    "fitnessFunction": {
+        "kind": "defaultFitness",
+        "timeout": 300000
+    },
+    "stoppingCondition": {
+        "kind": "combined",
+        "conditions": [
+            {
+                "kind": "optimal"
+            },
+            {
+                "kind": "fixedTime",
+                "duration": 150000000
+            }
+        ]
+    },
+    "initialVariants": {
+        "chromosome": {
+            "kind": "repair"
+        },
+        "generator": {
+            "kind": "mutating"
+        }
+    },
+    "mutation": {
+        "kind": "esMutation",
+        "suspiciousness": "dstar2",
+        "operators": [
+            "deleteStatement",
+            "deleteExpression",
+            "switchDropDownValue",
+            "duplicateStatement",
+            "moveExpression",
+            "moveStatement",
+            "swapStatements",
+            "swapExpressions",
+            "replaceStatement",
+            "replaceExpression",
+            "unwrapStack",
+            "wrapStack"
+        ],
+        "probability": {
+            "insertion": 0.3333333333333333,
+            "deletion": 0.3333333333333333,
+            "change": 0.3333333333333333
+        }
+    },
+    "subsumeNegativeTestResults": true
+}

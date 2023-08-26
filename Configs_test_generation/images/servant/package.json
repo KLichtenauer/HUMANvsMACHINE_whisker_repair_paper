@@ -1,0 +1,31 @@
+{
+    "name": "servant",
+    "version": "0.8.0",
+    "description": "Servant for Whisker",
+    "main": "servant.js",
+    "dependencies": {
+        "@supercharge/promise-pool": "^2.4.0",
+        "ajv": "^8.12.0",
+        "chalk": "^4.1.2",
+        "commander": "^9.3.0",
+        "csv-stringify": "^5.6.5",
+        "espree": "^9.5.1",
+        "js-yaml": "^4.1.0",
+        "jszip": "^3.10.1",
+        "puppeteer": "15.4.0",
+        "rimraf": "3.0.2",
+        "whisker-web": "0.8.0",
+        "yaml": "^1.10.2"
+    },
+    "scripts": {
+        "build": "webpack --color --bail",
+        "build:watch": "webpack --color --watch",
+        "build:clean": "if [ -d dist ]; then rm -rf dist; fi && webpack --color --bail"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}

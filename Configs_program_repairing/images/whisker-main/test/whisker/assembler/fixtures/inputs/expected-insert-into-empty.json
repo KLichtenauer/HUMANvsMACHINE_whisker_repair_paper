@@ -1,0 +1,263 @@
+{
+    "projectVersion": 3,
+    "extensions": [],
+    "meta": {
+        "agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+        "semver": "3.0.0",
+        "vm": "0.2.0-prerelease.20220510130158"
+    },
+    "monitors": [],
+    "targets": [
+        {
+            "blocks": {},
+            "broadcasts": {},
+            "comments": {},
+            "costumes": [
+                {
+                    "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+                    "dataFormat": "svg",
+                    "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+                    "name": "backdrop1",
+                    "rotationCenterX": 240,
+                    "rotationCenterY": 180
+                }
+            ],
+            "currentCostume": 0,
+            "isStage": true,
+            "layerOrder": 0,
+            "lists": {},
+            "name": "Stage",
+            "sounds": [
+                {
+                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+                    "dataFormat": "wav",
+                    "format": "",
+                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+                    "name": "pop",
+                    "rate": 48000,
+                    "sampleCount": 1123
+                }
+            ],
+            "tempo": 60,
+            "textToSpeechLanguage": null,
+            "variables": {
+                "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+                    "my variable",
+                    0
+                ]
+            },
+            "videoState": "on",
+            "videoTransparency": 50,
+            "volume": 100
+        },
+        {
+            "blocks": {
+                "condition": {
+                    "fields": {},
+                    "inputs": {
+                        "OPERAND1": [
+                            2,
+                            "string-contains"
+                        ],
+                        "OPERAND2": [
+                            2,
+                            "is-greater-than"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "operator_and",
+                    "parent": "if-then-else",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "else-branch": {
+                    "fields": {},
+                    "inputs": {
+                        "SECS": [
+                            1,
+                            [
+                                4,
+                                "1"
+                            ]
+                        ],
+                        "TO": [
+                            1,
+                            "glide-to-menu"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "motion_glideto",
+                    "parent": "if-then-else",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "glide-to-menu": {
+                    "fields": {
+                        "TO": [
+                            "_random_",
+                            null
+                        ]
+                    },
+                    "inputs": {},
+                    "next": null,
+                    "opcode": "motion_glideto_menu",
+                    "parent": "else-branch",
+                    "shadow": true,
+                    "topLevel": false
+                },
+                "goto-menu": {
+                    "fields": {
+                        "TO": [
+                            "_random_",
+                            null
+                        ]
+                    },
+                    "inputs": {},
+                    "next": null,
+                    "opcode": "motion_goto_menu",
+                    "parent": "if-branch",
+                    "shadow": true,
+                    "topLevel": false
+                },
+                "if-branch": {
+                    "fields": {},
+                    "inputs": {
+                        "TO": [
+                            1,
+                            "goto-menu"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "motion_goto",
+                    "parent": "if-then-else",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "if-then-else": {
+                    "fields": {},
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "condition"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "if-branch"
+                        ],
+                        "SUBSTACK2": [
+                            2,
+                            "else-branch"
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "control_if_else",
+                    "parent": null,
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 0,
+                    "y": 0
+                },
+                "is-greater-than": {
+                    "fields": {},
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "my variable",
+                                "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "50"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "operator_gt",
+                    "parent": "condition",
+                    "shadow": false,
+                    "topLevel": false
+                },
+                "string-contains": {
+                    "fields": {},
+                    "inputs": {
+                        "STRING1": [
+                            1,
+                            [
+                                10,
+                                "apple"
+                            ]
+                        ],
+                        "STRING2": [
+                            1,
+                            [
+                                10,
+                                "a"
+                            ]
+                        ]
+                    },
+                    "next": null,
+                    "opcode": "operator_contains",
+                    "parent": "condition",
+                    "shadow": false,
+                    "topLevel": false
+                }
+            },
+            "broadcasts": {},
+            "comments": {},
+            "costumes": [
+                {
+                    "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+                    "bitmapResolution": 1,
+                    "dataFormat": "svg",
+                    "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+                    "name": "costume1",
+                    "rotationCenterX": 48,
+                    "rotationCenterY": 50
+                },
+                {
+                    "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+                    "bitmapResolution": 1,
+                    "dataFormat": "svg",
+                    "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+                    "name": "costume2",
+                    "rotationCenterX": 46,
+                    "rotationCenterY": 53
+                }
+            ],
+            "currentCostume": 0,
+            "direction": 90,
+            "draggable": false,
+            "isStage": false,
+            "layerOrder": 1,
+            "lists": {},
+            "name": "Sprite1",
+            "rotationStyle": "all around",
+            "size": 100,
+            "sounds": [
+                {
+                    "assetId": "83c36d806dc92327b9e7049a565c6bff",
+                    "dataFormat": "wav",
+                    "format": "",
+                    "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav",
+                    "name": "Meow",
+                    "rate": 48000,
+                    "sampleCount": 40681
+                }
+            ],
+            "variables": {},
+            "visible": true,
+            "volume": 100,
+            "x": 0,
+            "y": 0
+        }
+    ]
+}

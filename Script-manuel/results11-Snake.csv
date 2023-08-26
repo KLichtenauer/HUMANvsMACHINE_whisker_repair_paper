@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize head,initialize body,clones must be deleted,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+11-Snake.sb3,1687694419817,5,None,pass,pass,fail,2,1,0,0,59,32,0.54,0.303

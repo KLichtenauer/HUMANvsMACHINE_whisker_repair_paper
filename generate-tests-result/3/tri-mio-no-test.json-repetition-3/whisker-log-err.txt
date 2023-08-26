@@ -1,0 +1,28 @@
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x17540037ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: You have specified two seeds! Using seed 1687936810575 from the CLI and ignoring seed 3 defined within the config files. 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x17540037ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x17540037ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x17540037ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) 
+

@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize pirate,initialize isle,initialize card,initialize girl,initialize treasure,girl show short,girl show long,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+8-Schatzinsel.sb3,452,17,None,pass,pass,pass,pass,pass,fail,fail,5,2,0,0,36,36,1,6.443

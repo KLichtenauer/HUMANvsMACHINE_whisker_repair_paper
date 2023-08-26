@@ -1,0 +1,1793 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687938626047',
+  headless: true,
+  configPath: '/configs/mio-no-assertion.json-repetition-5.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/8-Schatzinsel.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 8-Schatzinsel.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687938626047
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687938626047
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: 7TqO7oQ4g|3WPp!GGVn=-Pirat of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: ,[/4;mN(s-Bi6bukF,5F-Pirat of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: `JE$t491ww-{#yA66%)s-Pirat of type looks_changesizeby
+ INFO:  Forwarded: DEBUG: Found test for goal: 3-WOye7?|:IV/5x`e0Dk-Pirat of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: jL=eh01,VvRe*rbTrUI`-Pirat of type looks_say
+ INFO:  Forwarded: DEBUG: Found test for goal: !x8H+//|Dzj)S!BJSexH-Pirat of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: QfG]_zlx38gryo=8iZyL-Pirat of type looks_say
+ INFO:  Forwarded: DEBUG: Found test for goal: 2J48Coo(XBX0|H#UeRc+-Pirat of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: P/(npT-*@5Thk(p~@cdq-Pirat of type looks_say
+ INFO:  Forwarded: DEBUG: Found test for goal: %jW.on0S!7T_N~uGzae%-Pirat of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: asmJ#UlJ)$6gft4q=096-Pirat of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: BHulPMY?v6zdZY{Sa_dh-Pirat of type looks_setsizeto
+ INFO:  Forwarded: DEBUG: Found test for goal: pW6h6=$ydU{%PVgdK)0N-Pirat of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: sQCdX;M6ol4|D/2xQ!IE-Pirat of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: {Ib.y`:[%-GbceURJSz8-Schatzkarte of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: !6j}=*8$W}=9[X:W:PG:-Schatzkarte of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: ?cZ!Mo4,V2?6(W5dVOfV-Schatzkarte of type looks_gotofrontback
+ INFO:  Forwarded: DEBUG: Found test for goal: y/ia3*ysX:*;A=0*R1*(-Vulkaninsel of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: RUdsdqh%KWHt7W6FuBSW-Vulkaninsel of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: YT$[^Byo/lJuc1G3U8Hv-Vulkaninsel of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: ihw]Fu~E;FJjPGR@G[%B-Vulkaninsel of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: R|EmC#xsG_eXZJjz`20)-Vulkaninsel of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: `?htXzAK{!qoUK@3c17Y-Vulkaninsel of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: LM~~l[OmZl0bmz)EEM7]-Schatztruhe of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: v[|f(5%i/;*0Vo?~XLpS-Schatztruhe of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: R5Y!ZSF;Cis;.}E*NyXg-Schatztruhe of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: k:yU9Y%G53w%z7U7fimM-Schatztruhe of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: aZ@c1CMAF_m9#:qf6Qk6-Schatztruhe of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: 15j}eA1Kjp;6rE18sX1r-Mädchen of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: If88H-4#y=rg!2N96iNe-Mädchen of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: Q(8T|83A%bzso@05^;,(-Mädchen of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: ;cjAefLHGh=RQi98kC:(-Mädchen of type looks_setsizeto
+ INFO:  Forwarded: DEBUG: Found test for goal: B@ItyaM0fgGt:]u1[(5e-Pirat of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: ^T~/Q$9`_i09GH{?$fxq-Pirat of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: bkN$y),1oE^}==0WNaAs-Pirat of type looks_changesizeby
+ INFO:  Forwarded: DEBUG: Found test for goal: M}pG%/dgfi[,$#v~9vF$-Pirat of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: h):odwlcigK]EJzg!tzM-Pirat of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: 3g1l8.;^Oz0k1HL):P]3-Pirat of type motion_changeyby
+ INFO:  Forwarded: DEBUG: Found test for goal: K#f.ZE7zIN#h3Yi)#EpW-Pirat of type motion_changeyby
+ INFO:  Forwarded: DEBUG: Found test for goal: UYH:kLPxT`J=4Ru:3IP?-Pirat of type motion_changexby
+ INFO:  Forwarded: DEBUG: Found test for goal: Vj0/@YR2zo2^^.*hHDU1-Pirat of type motion_changexby
+ INFO:  Forwarded: DEBUG: Found test for goal: (N($V}4*2nGPPfl;|)3U-Pirat of type event_whenbroadcastreceived
+ INFO:  Forwarded: DEBUG: Found test for goal: ,+TWIdIWVM(kn-]Mn#b{-Pirat of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: ~zq.!RNAf$Db`M{HMtz4-Pirat of type event_broadcast
+ INFO:  Forwarded: DEBUG: Found test for goal: @Kc=()HKPTY.5:J6COt)-Schatztruhe of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: +9^J(PgCo+)edbJ!O/}C-Mädchen of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: $SI%l3E!sP=|]4#fF][o-Mädchen of type event_whenbroadcastreceived
+ INFO:  Forwarded: DEBUG: Found test for goal: _ft{=,8Fl!dr~gVP}Fvw-Mädchen of type looks_changesizeby
+ INFO:  Forwarded: DEBUG: Found test for goal: .Pmy@d30`hETHrv;ejB)-Mädchen of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: VL573tMD?u^:`{-}X7n[-Mädchen of type control_wait
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 50/50, open independent goals: 0
+ INFO:  Forwarded: DEBUG: Starting minimization for 2 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 26 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 6 fewer events and a duration of 133458 ms
+ INFO:  Forwarded: DEBUG: Minimization finished with a difference of -1 tests and a duration of 133465 ms
+ INFO:  Forwarded: DEBUG: Adding assertions
+ INFO:  Forwarded: DEBUG: Adding assertions to test Wait for 4 steps
+Wait for 1 steps
+Wait for 31 steps
+Wait for 1 steps
+Wait for 24 steps
+Wait for 1 steps
+Wait for 57 steps
+Wait for 1 steps
+Wait for 17 steps
+Wait for 1 steps
+Wait for 86 steps
+Wait for 1 steps
+Wait for 46 steps
+Wait for 1 steps
+Wait for 46 steps
+Wait for 1 steps
+Wait for 71 steps
+Wait for 1 steps
+Wait for 300 steps
+Wait for 1 steps
+ of length 20
+ INFO:  Forwarded: DEBUG: Trace length: 10
+ INFO:  Forwarded: DEBUG: Resulting test: Wait for 4 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -135.83333333333334/-68.03333333333333
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 68
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 31 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -102.5/-68.3
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 60
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 24 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -76.45833333333334/-68.50833333333334
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 53
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 57 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -16.041666666666657/-68.99166666666666
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 39
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 17 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 2.7083333333333144/-69.14166666666667
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 34
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 86 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 93.33333333333334/-69.86666666666666
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 46 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 103.11111111111111/-39
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Wir sind vielen Gefahren begegnet."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 46 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 92.66666666666666/8
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Wir sind vielen Gefahren begegnet."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 71 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 10/10
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Es gab viele aktive Vulkane auf der Insel."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 300 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -22/68
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is not saying anything
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 22
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 23
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is visible
+assert Sprite Schatztruhe is visible
+assert Sprite Mädchen is visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+
+ INFO:  Forwarded: Total number of tests: 1
+ INFO:  Forwarded: Test 0:
+Wait for 4 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -135.83333333333334/-68.03333333333333
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 68
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 31 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -102.5/-68.3
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 60
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 24 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -76.45833333333334/-68.50833333333334
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 53
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 57 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -16.041666666666657/-68.99166666666666
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 39
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 17 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 2.7083333333333144/-69.14166666666667
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 34
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 86 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 93.33333333333334/-69.86666666666666
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Ich möchte dir eine Geschichte erzählen: Wir sind über das Meer zur Schatzinsel gefahren."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 46 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 103.11111111111111/-39
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Wir sind vielen Gefahren begegnet."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 46 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 92.66666666666666/8
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Wir sind vielen Gefahren begegnet."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is not visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 71 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position 10/10
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is saying "Es gab viele aktive Vulkane auf der Insel."
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 19
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 20
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is visible
+assert Sprite Schatztruhe is not visible
+assert Sprite Mädchen is not visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+Wait for 300 steps
+Wait for 1 steps
+assert stage has backdrop 0
+assert Sprite Pirat has costume 0
+assert Sprite Schatzkarte has costume 0
+assert Sprite Vulkaninsel has costume 0
+assert Sprite Schatztruhe has costume 0
+assert Sprite Mädchen has costume 0
+assert Sprite Pirat has clones: 0
+assert Sprite Schatzkarte has clones: 0
+assert Sprite Vulkaninsel has clones: 0
+assert Sprite Schatztruhe has clones: 0
+assert Sprite Mädchen has clones: 0
+assert Sprite Pirat has direction 90
+assert Sprite Schatzkarte has direction 90
+assert Sprite Vulkaninsel has direction 90
+assert Sprite Schatztruhe has direction 90
+assert Sprite Mädchen has direction 90
+assert Sprite Pirat has graphics effect color set to 0
+assert Sprite Pirat has graphics effect fisheye set to 0
+assert Sprite Pirat has graphics effect whirl set to 0
+assert Sprite Pirat has graphics effect pixelate set to 0
+assert Sprite Pirat has graphics effect mosaic set to 0
+assert Sprite Pirat has graphics effect brightness set to 0
+assert Sprite Pirat has graphics effect ghost set to 0
+assert Sprite Schatzkarte has graphics effect color set to 0
+assert Sprite Schatzkarte has graphics effect fisheye set to 0
+assert Sprite Schatzkarte has graphics effect whirl set to 0
+assert Sprite Schatzkarte has graphics effect pixelate set to 0
+assert Sprite Schatzkarte has graphics effect mosaic set to 0
+assert Sprite Schatzkarte has graphics effect brightness set to 0
+assert Sprite Schatzkarte has graphics effect ghost set to 0
+assert Sprite Vulkaninsel has graphics effect color set to 0
+assert Sprite Vulkaninsel has graphics effect fisheye set to 0
+assert Sprite Vulkaninsel has graphics effect whirl set to 0
+assert Sprite Vulkaninsel has graphics effect pixelate set to 0
+assert Sprite Vulkaninsel has graphics effect mosaic set to 0
+assert Sprite Vulkaninsel has graphics effect brightness set to 0
+assert Sprite Vulkaninsel has graphics effect ghost set to 0
+assert Sprite Schatztruhe has graphics effect color set to 0
+assert Sprite Schatztruhe has graphics effect fisheye set to 0
+assert Sprite Schatztruhe has graphics effect whirl set to 0
+assert Sprite Schatztruhe has graphics effect pixelate set to 0
+assert Sprite Schatztruhe has graphics effect mosaic set to 0
+assert Sprite Schatztruhe has graphics effect brightness set to 0
+assert Sprite Schatztruhe has graphics effect ghost set to 0
+assert Sprite Mädchen has graphics effect color set to 0
+assert Sprite Mädchen has graphics effect fisheye set to 0
+assert Sprite Mädchen has graphics effect whirl set to 0
+assert Sprite Mädchen has graphics effect pixelate set to 0
+assert Sprite Mädchen has graphics effect mosaic set to 0
+assert Sprite Mädchen has graphics effect brightness set to 0
+assert Sprite Mädchen has graphics effect ghost set to 0
+assert Sprite Pirat has layer 4
+assert Sprite Schatzkarte has layer 1
+assert Sprite Vulkaninsel has layer 3
+assert Sprite Schatztruhe has layer 2
+assert Sprite Mädchen has layer 5
+assert Sprite Pirat has position -22/68
+assert Sprite Schatzkarte has position 0/-20
+assert Sprite Vulkaninsel has position -58/10
+assert Sprite Schatztruhe has position -80/80
+assert Sprite Mädchen has position 100/-20
+assert Sprite Pirat is not saying anything
+assert Sprite Schatzkarte is not saying anything
+assert Sprite Vulkaninsel is not saying anything
+assert Sprite Schatztruhe is not saying anything
+assert Sprite Mädchen is not saying anything
+assert Sprite Pirat has size 22
+assert Sprite Schatzkarte has size 120
+assert Sprite Vulkaninsel has size 30
+assert Sprite Schatztruhe has size 20
+assert Sprite Mädchen has size 23
+assert Sprite Pirat is visible
+assert Sprite Schatzkarte is visible
+assert Sprite Vulkaninsel is visible
+assert Sprite Schatztruhe is visible
+assert Sprite Mädchen is visible
+assert Stage has volume 100
+assert Sprite Pirat has volume 100
+assert Sprite Schatzkarte has volume 100
+assert Sprite Vulkaninsel has volume 100
+assert Sprite Schatztruhe has volume 100
+assert Sprite Mädchen has volume 100
+
+ INFO:  Forwarded: projectName,configName,fitnessFunctionCount,iterationCount,coveredFitnessFunctionCount,bestCoverage,testsuiteEventCount,executedEventsCount,executedTests,minimizedTests,minimizedEvents,averageTestExecutionTime,bestTestSuiteSize,numberFitnessEvaluations,createdTestsToReachFullCoverage,timeToReachFullCoverage,0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,21000,22000,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,34000,35000,36000,37000,38000,39000,40000,41000,42000,43000,44000,45000,46000,47000,48000,49000,50000,51000,52000,53000,54000,55000,56000,57000,58000,59000,60000,61000,62000,63000,64000,65000,66000,67000,68000,69000,70000,71000,72000,73000,74000,75000,76000,77000,78000,79000,80000,81000,82000,83000,84000,85000,86000,87000,88000,89000,90000,91000,92000,93000,94000,95000,96000,97000,98000,99000,100000,101000,102000,103000,104000,105000,106000,107000,108000,109000,110000,111000,112000,113000,114000,115000,116000,117000,118000,119000,120000,121000,122000,123000,124000,125000,126000,127000,128000,129000,130000,131000,132000,133000,134000,135000,136000,137000,138000,139000,140000,141000,142000,143000,144000,145000,146000,147000,148000,149000,150000,151000,152000,153000,154000,155000,156000,157000,158000,159000,160000,161000,162000,163000,164000,165000,166000,167000,168000,169000,170000,171000,172000,173000,174000,175000,176000,177000,178000,179000,180000,181000,182000,183000,184000,185000,186000,187000,188000,189000,190000,191000,192000,193000,194000,195000,196000,197000,198000,199000,200000,201000,202000,203000,204000,205000,206000,207000,208000,209000,210000,211000,212000,213000,214000,215000,216000,217000,218000,219000,220000,221000,222000,223000,224000,225000,226000,227000,228000,229000,230000,231000,232000,233000,234000,235000,236000,237000,238000,239000,240000,241000,242000,243000,244000,245000,246000,247000,248000,249000,250000,251000,252000,253000,254000,255000,256000,257000,258000,259000,260000,261000,262000,263000,264000,265000,266000,267000,268000,269000,270000,271000,272000,273000,274000,275000,276000,277000,278000,279000,280000,281000,282000,283000,284000,285000,286000,287000,288000,289000,290000,291000,292000,293000,294000,295000,296000,297000,298000,299000,300000,301000,302000,303000,304000,305000,306000,307000,308000,309000,310000,311000,312000,313000,314000,315000,316000,317000,318000,319000,320000,321000,322000,323000,324000,325000,326000,327000,328000,329000,330000,331000,332000,333000,334000,335000,336000,337000,338000,339000,340000,341000,342000,343000,344000,345000,346000,347000,348000,349000,350000,351000,352000,353000,354000,355000,356000,357000,358000,359000,360000,361000,362000,363000,364000,365000,366000,367000,368000,369000,370000,371000,372000,373000,374000,375000,376000,377000,378000,379000,380000,381000,382000,383000,384000,385000,386000,387000,388000,389000,390000,391000,392000,393000,394000,395000,396000,397000,398000,399000,400000,401000,402000,403000,404000,405000,406000,407000,408000,409000,410000,411000,412000,413000,414000,415000,416000,417000,418000,419000,420000,421000,422000,423000,424000,425000,426000,427000,428000,429000,430000,431000,432000,433000,434000,435000,436000,437000,438000,439000,440000,441000,442000,443000,444000,445000,446000,447000,448000,449000,450000,451000,452000,453000,454000,455000,456000,457000,458000,459000,460000,461000,462000,463000,464000,465000,466000,467000,468000,469000,470000,471000,472000,473000,474000,475000,476000,477000,478000,479000,480000,481000,482000,483000,484000,485000,486000,487000,488000,489000,490000,491000,492000,493000,494000,495000,496000,497000,498000,499000,500000,501000,502000,503000,504000,505000,506000,507000,508000,509000,510000,511000,512000,513000,514000,515000,516000,517000,518000,519000,520000,521000,522000,523000,524000,525000,526000,527000,528000,529000,530000,531000,532000,533000,534000,535000,536000,537000,538000,539000,540000,541000,542000,543000,544000,545000,546000,547000,548000,549000,550000,551000,552000,553000,554000,555000,556000,557000,558000,559000,560000,561000,562000,563000,564000,565000,566000,567000,568000,569000,570000,571000,572000,573000,574000,575000,576000,577000,578000,579000,580000,581000,582000,583000,584000,585000,586000,587000,588000,589000,590000,591000,592000,593000,594000,595000,596000,597000,598000,599000,600000
+8-Schatzinsel.sb3,mio-no-assertion.json-repetition-5.json,50,1,50,1,20,24,2,1,6,4363,1,4,0,11495,0,0,0,0,32,32,32,32,32,32,32,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
+ DEBUG:  Downloading tests to /results 
+
+ DEBUG:  Duration: 160.821 Seconds 
+
+Creating CSV summary in /results

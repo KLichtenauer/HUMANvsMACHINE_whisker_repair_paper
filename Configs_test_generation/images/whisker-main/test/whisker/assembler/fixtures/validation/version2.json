@@ -1,0 +1,579 @@
+{
+    "objName": "Stage",
+    "sounds": [
+        {
+            "soundName": "pop",
+            "soundID": -1,
+            "md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+            "sampleCount": 258,
+            "rate": 11025,
+            "format": ""
+        }
+    ],
+    "costumes": [
+        {
+            "costumeName": "backdrop1",
+            "baseLayerID": -1,
+            "baseLayerMD5": "75475ab2c366a79c0d45fa0f7b736901.png",
+            "bitmapResolution": 2,
+            "rotationCenterX": 480,
+            "rotationCenterY": 360
+        },
+        {
+            "costumeName": "blue sky3",
+            "baseLayerID": -1,
+            "baseLayerMD5": "a0b8eb566d38a65924f5617010553426.svg",
+            "bitmapResolution": 1,
+            "rotationCenterX": 240,
+            "rotationCenterY": 179
+        }
+    ],
+    "currentCostumeIndex": 0,
+    "penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+    "penLayerID": -1,
+    "tempoBPM": 60,
+    "videoAlpha": 0.5,
+    "children": [
+        {
+            "objName": "Ball2",
+            "scripts": [
+                [
+                    10,
+                    10,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "show"
+                        ]
+                    ]
+                ],
+                [
+                    10,
+                    10,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "doIf",
+                                    [
+                                        "touching:",
+                                        "Ghost1"
+                                    ],
+                                    [
+                                        [
+                                            "hide"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "sounds": [
+                {
+                    "soundName": "pop",
+                    "soundID": -1,
+                    "md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+                    "sampleCount": 258,
+                    "rate": 11025,
+                    "format": ""
+                }
+            ],
+            "costumes": [
+                {
+                    "costumeName": "ball-a",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "10117ddaefa98d819f2b1df93805622f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-b",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "6e6330cad7750ea7e9dc88402661deb8.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-c",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "bb45ed5db278f15c17c012c34a6b160f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-d",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "5d494659deae5c0de06b5885f5524276.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-e",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "e80c98bc62fd32e8df81642af11ffb1a.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                }
+            ],
+            "currentCostumeIndex": 0,
+            "scratchX": 182,
+            "scratchY": -113,
+            "scale": 1,
+            "direction": 90,
+            "rotationStyle": "normal",
+            "isDraggable": false,
+            "indexInLibrary": 3,
+            "visible": true,
+            "spriteInfo": {}
+        },
+        {
+            "objName": "Ball3",
+            "scripts": [
+                [
+                    10,
+                    10,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "show"
+                        ]
+                    ]
+                ],
+                [
+                    10,
+                    10,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "doIf",
+                                    [
+                                        "touching:",
+                                        "Ghost1"
+                                    ],
+                                    [
+                                        [
+                                            "hide"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "sounds": [
+                {
+                    "soundName": "pop",
+                    "soundID": -1,
+                    "md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+                    "sampleCount": 258,
+                    "rate": 11025,
+                    "format": ""
+                }
+            ],
+            "costumes": [
+                {
+                    "costumeName": "ball-a",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "10117ddaefa98d819f2b1df93805622f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-b",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "6e6330cad7750ea7e9dc88402661deb8.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-c",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "bb45ed5db278f15c17c012c34a6b160f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-d",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "5d494659deae5c0de06b5885f5524276.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-e",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "e80c98bc62fd32e8df81642af11ffb1a.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                }
+            ],
+            "currentCostumeIndex": 0,
+            "scratchX": -220,
+            "scratchY": 111,
+            "scale": 1,
+            "direction": 90,
+            "rotationStyle": "normal",
+            "isDraggable": false,
+            "indexInLibrary": 4,
+            "visible": true,
+            "spriteInfo": {}
+        },
+        {
+            "objName": "Ball",
+            "scripts": [
+                [
+                    32,
+                    26,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "show"
+                        ]
+                    ]
+                ],
+                [
+                    186,
+                    25,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "doIf",
+                                    [
+                                        "touching:",
+                                        "Ghost1"
+                                    ],
+                                    [
+                                        [
+                                            "hide"
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "sounds": [
+                {
+                    "soundName": "pop",
+                    "soundID": -1,
+                    "md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+                    "sampleCount": 258,
+                    "rate": 11025,
+                    "format": ""
+                }
+            ],
+            "costumes": [
+                {
+                    "costumeName": "ball-a",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "10117ddaefa98d819f2b1df93805622f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-b",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "6e6330cad7750ea7e9dc88402661deb8.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-c",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "bb45ed5db278f15c17c012c34a6b160f.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-d",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "5d494659deae5c0de06b5885f5524276.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                },
+                {
+                    "costumeName": "ball-e",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "e80c98bc62fd32e8df81642af11ffb1a.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 22,
+                    "rotationCenterY": 22
+                }
+            ],
+            "currentCostumeIndex": 0,
+            "scratchX": 27,
+            "scratchY": -1,
+            "scale": 1,
+            "direction": 90,
+            "rotationStyle": "normal",
+            "isDraggable": false,
+            "indexInLibrary": 2,
+            "visible": true,
+            "spriteInfo": {}
+        },
+        {
+            "objName": "Ghost1",
+            "scripts": [
+                [
+                    267,
+                    33,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "gotoX:y:",
+                            -208,
+                            -121
+                        ],
+                        [
+                            "setSizeTo:",
+                            75
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "doIf",
+                                    [
+                                        "touchingColor:",
+                                        -16777216
+                                    ],
+                                    [
+                                        [
+                                            "gotoX:y:",
+                                            -208,
+                                            -121
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    5,
+                    18,
+                    [
+                        [
+                            "whenKeyPressed",
+                            "w"
+                        ],
+                        [
+                            "heading:",
+                            0
+                        ],
+                        [
+                            "forward:",
+                            10
+                        ]
+                    ]
+                ],
+                [
+                    5,
+                    149,
+                    [
+                        [
+                            "whenKeyPressed",
+                            "a"
+                        ],
+                        [
+                            "heading:",
+                            -90
+                        ],
+                        [
+                            "forward:",
+                            10
+                        ]
+                    ]
+                ],
+                [
+                    10,
+                    319,
+                    [
+                        [
+                            "whenKeyPressed",
+                            "s"
+                        ],
+                        [
+                            "heading:",
+                            180
+                        ],
+                        [
+                            "forward:",
+                            10
+                        ]
+                    ]
+                ],
+                [
+                    8,
+                    447,
+                    [
+                        [
+                            "whenKeyPressed",
+                            "d"
+                        ],
+                        [
+                            "heading:",
+                            90
+                        ],
+                        [
+                            "forward:",
+                            10
+                        ]
+                    ]
+                ],
+                [
+                    259,
+                    224,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "doIf",
+                                    [
+                                        "touchingColor:",
+                                        -65536
+                                    ],
+                                    [
+                                        [
+                                            "playDrum",
+                                            1,
+                                            0.25
+                                        ],
+                                        [
+                                            "startScene",
+                                            "blue sky3"
+                                        ],
+                                        [
+                                            "wait:elapsed:from:",
+                                            6
+                                        ],
+                                        [
+                                            "startScene",
+                                            "backdrop1"
+                                        ],
+                                        [
+                                            "say:duration:elapsed:from:",
+                                            "You're still here? What are doing I said mind your own buiness!",
+                                            5
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    353,
+                    426,
+                    [
+                        [
+                            "whenGreenFlag"
+                        ],
+                        [
+                            "doForever",
+                            [
+                                [
+                                    "say:duration:elapsed:from:",
+                                    "Oh look I should get those orbs and then get out of here!",
+                                    4
+                                ],
+                                [
+                                    "wait:elapsed:from:",
+                                    1
+                                ],
+                                [
+                                    "stopScripts",
+                                    "this script"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            "sounds": [
+                {
+                    "soundName": "pop",
+                    "soundID": -1,
+                    "md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+                    "sampleCount": 258,
+                    "rate": 11025,
+                    "format": ""
+                }
+            ],
+            "costumes": [
+                {
+                    "costumeName": "ghost1 ",
+                    "baseLayerID": -1,
+                    "baseLayerMD5": "04daf767c6c9e035fca878952da94671.svg",
+                    "bitmapResolution": 1,
+                    "rotationCenterX": 27,
+                    "rotationCenterY": 26
+                }
+            ],
+            "currentCostumeIndex": 0,
+            "scratchX": -208,
+            "scratchY": -121,
+            "scale": 0.75,
+            "direction": 90,
+            "rotationStyle": "normal",
+            "isDraggable": false,
+            "indexInLibrary": 1,
+            "visible": true,
+            "spriteInfo": {}
+        }
+    ],
+    "info": {
+        "swfVersion": "v459.1",
+        "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
+        "flashVersion": "WIN 28,0,0,137",
+        "projectID": "201513665",
+        "videoOn": false,
+        "scriptCount": 13,
+        "hasCloudData": false,
+        "spriteCount": 4
+    }
+}

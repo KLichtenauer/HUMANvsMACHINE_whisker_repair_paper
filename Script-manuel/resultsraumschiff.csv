@@ -1,0 +1,7 @@
+projectName,seed,assertions,generationAlgorithm,initialize rocket visible,initialize black hole visible,initialize star visible,initialize rocket position,initialize black hole position,initialize star position,initialize backdrop,rocket moving down,rocket moving left,rocket moving right,star Moving,star touching rocket say,star touching rocket invisible,black hole moving,moving hole touching rocket say,moving hole touching rocket invisible,normal hole touching rocket say,normal hole touching rocket invisible,win backdrop,win other invisible,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+buggy-1.sb3,1690061113549,29,None,pass,pass,pass,fail,fail,fail,pass,pass,pass,pass,pass,fail,fail,fail,pass,pass,pass,pass,fail,fail,12,8,0,0,31,31,1,8.237
+buggy-2.sb3,1690061126192,29,None,pass,pass,pass,fail,fail,fail,pass,pass,pass,pass,fail,fail,fail,fail,fail,fail,fail,fail,fail,fail,7,13,0,0,12,12,1,6.392
+buggy-3.sb3,1690061137099,29,None,pass,pass,pass,pass,fail,pass,pass,fail,fail,fail,fail,fail,fail,fail,fail,fail,fail,fail,fail,fail,6,14,0,0,3,0,0,17.192
+buggy-4.sb3,1690061158978,29,None,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,fail,pass,pass,pass,pass,pass,fail,fail,17,3,0,0,34,34,1,4.48
+buggy-5.sb3,1690061167619,29,None,pass,pass,pass,fail,fail,pass,pass,pass,pass,pass,fail,fail,fail,fail,fail,pass,fail,pass,fail,fail,10,10,0,0,31,31,1,7.023
+buggy-6.sb3,1690061179394,29,None,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,fail,fail,18,2,0,0,46,46,1,5.615

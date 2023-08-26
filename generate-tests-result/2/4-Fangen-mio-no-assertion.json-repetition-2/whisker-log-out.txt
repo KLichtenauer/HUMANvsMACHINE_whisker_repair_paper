@@ -1,0 +1,70 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687939424583',
+  headless: true,
+  configPath: '/configs/mio-no-assertion.json-repetition-2.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/4-Fangen.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 4-Fangen.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687939424583
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687939424583
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: j)RNZ2enLsjKRx5Y6z[;-Scheibe of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: VJTALhP^l^=nqO%S%gB--Scheibe of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: ~@`zVa*tveAWJ9vj.R@K-Scheibe of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: hVUjwWbW5ItTd~4#uE2Y-Scheibe of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: D;XK=e`EctlCJw?n,PQ5-Scheibe of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: xD]AChUDg%/9lpZi_wCX-Scheibe of type motion_turnleft
+ INFO:  Forwarded: DEBUG: Found test for goal: #z8L-[HvJ],~=b`QA%mb-Scheibe of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: TXFhWyo(c2z6QP{Kk*/z-Scheibe of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: K~v9C?p=zsnuduwl(1i;-Scheibe of type sensing_setdragmode
+ INFO:  Forwarded: DEBUG: Found test for goal: LX2`@72oi{`GWLPyBuxH-Scheibe of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: +0Fb.aK9vHHhh5w#Fk*Y-Scheibe of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: S/26rTzY#A})=bZu=L!T-Scheibe of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: UC~J}3We2.4QHw0X#PnS-Scheibe of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: |;31dpFBViP=%;5H1C?2-Scheibe of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: )lYkG_RY9:,1t377%~I=-Rot of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 154l%335vT.#,c.0~Cgh-Rot of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: 5?KS6Faj8h1+.F:6-]G;-Rot of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: vo}ry2x^HLW47V@DCqVb-Rot of type control_create_clone_of
+ INFO:  Forwarded: DEBUG: Found test for goal: P`QiSx#tss/0myH=J=)H-Rot of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: d?3iIvX}=BIg%cy56v^{-Rot of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: nK%fAirPn|w!AGx(Zz#}-Rot of type control_repeat_until
+ INFO:  Forwarded: DEBUG: Found test for goal: m?KGdB$vzd3gXf,,*`MY-Rot of type motion_goto
+ INFO:  Forwarded: DEBUG: Found test for goal: krngm]:ZfgyjQ[;/uP9E-Rot of type motion_pointtowards
+ INFO:  Forwarded: DEBUG: Found test for goal: qAk-4a,whZQPW-EG:;;B-Rot of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: ge6xFkwaI.i$-b^T+V7X-Rot of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: $5?8lMwK;-SGX!U1,JL!-Rot of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: sI$Y,8^0-11jR7(v2^3L-Rot of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: oI~+]*ql@7BYvDLk:ys)-Rot of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: j8@%4E:GlW`WxPFTHtW}-Rot of type sound_play
+ INFO:  Forwarded: DEBUG: Found test for goal: :IgGdQv=}qx|9YXL/iY4-Rot of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: ?%O~|q=z+gKBKuTSo{eD-Rot of type sound_play
+ INFO:  Forwarded: DEBUG: Found test for goal: 9~-Q2us^K]nyhF3yh7`g-Rot of type control_delete_this_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: _+mu$aO_-~=**aof5#f^-Rot of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: Afs!6E,Uv2SHJD_cuZL}-Rot of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: $:$Q3%4[09Ij;4-+A+Z!-Rot of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 35/36, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Found test for goal: TPwI/`t^Ahmoq){#Jq:n-Scheibe of type control_stop
+ INFO:  Forwarded: DEBUG: Iteration 2, covered goals total: 36/36, open independent goals: 0
+ INFO:  Forwarded: DEBUG: Starting minimization for 1 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 74 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 66 fewer events and a duration of 134066 ms
+ INFO:  Forwarded: DEBUG: Starting minimization for 74 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 70 fewer events and a duration of 110040 ms
+ INFO:  Forwarded: DEBUG: Starting minimization for 74 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 70 fewer events and a duration of 126647 ms
+ INFO:  Forwarded: DEBUG: Starting minimization for 74 events and a time-limit of Infinity

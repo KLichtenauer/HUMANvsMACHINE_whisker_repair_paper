@@ -1,0 +1,40 @@
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ WARNING: 
+ Forwarded: %cvm Tried to deserialize sprite specific monitor data_variable but could not find sprite Tree2. color: #fff; background: #bbbb00; 
+
+
+ WARNING: 
+ Forwarded: %cvm Tried to deserialize sprite specific monitor data_variable but could not find sprite Tree2. color: #fff; background: #bbbb00; 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x2f9c00330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: %cvm Tried to deserialize sprite specific monitor data_variable but could not find sprite Tree2. color: #fff; background: #bbbb00; 
+
+
+ WARNING: 
+ Forwarded: You have specified two seeds! Using seed 1687938271111 from the CLI and ignoring seed 5 defined within the config files. 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x2f9c00330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x2f9c00330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0x2f9c00330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) 
+

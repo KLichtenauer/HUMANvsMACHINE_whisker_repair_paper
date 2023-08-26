@@ -1,0 +1,549 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687849508697',
+  headless: true,
+  configPath: '/configs/mio-no-test.json-repetition-1.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/quad.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project quad.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687849508697
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687849508697
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: _wO7Y/puUM_:_SGuV3%0-Sprite1 of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 5m(*KDy3{L8A-5eRyiU}-Sprite1 of type sensing_askandwait
+ INFO:  Forwarded: DEBUG: Found test for goal: dcaNc-;Xf_lwmJph4zy:-Sprite1 of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: 3Etiyr`8`z_#2pl#k9e9-Sprite1 of type sensing_askandwait
+ INFO:  Forwarded: DEBUG: Found test for goal: +~?@uE7p)7aCQs`5MB6V-Sprite1 of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: qkGjk]utq.e=pJ0TrbC7-Sprite1 of type sensing_askandwait
+ INFO:  Forwarded: DEBUG: Found test for goal: yqgU.4`nWakwy,8A}).y-Sprite1 of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: ,_BV8nN`=095bE[AYr4?-Sprite1 of type sensing_askandwait
+ INFO:  Forwarded: DEBUG: Found test for goal: yp]xW;MoakxNN~t02/T1-Sprite1 of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: FlwIhj06iBvYYL$naGpr-Sprite1 of type sensing_askandwait
+ INFO:  Forwarded: DEBUG: Found test for goal: 0AwqK1U%EUvKgT`y-qW9-Sprite1 of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: :T,WuqmGNJV2|.a0UOJ#-Sprite1 of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: WRk_q=Y7H}s8|)do7:HK-Sprite1 of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: ;atH.Nm[rp}GoOz=G-Lr-Sprite1 of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: dsQUJ}iirV,OYC*?.NtX-Sprite1 of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: DB6/c^yyxQTonR2@+#bP-Sprite1 of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: .XZ9eS6E;%PS93g$kNF@-Sprite1 of type looks_say
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 17/22, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 2, covered goals total: 17/22, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 3, covered goals total: 17/22, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 4, covered goals total: 17/22, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Iteration 5, covered goals total: 17/22, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Found test for goal: K#t$poO4-xvo.?:pM[KN-Sprite1 of type looks_say
+ INFO:  Forwarded: DEBUG: Iteration 6, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 7, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 8, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 9, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 10, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 11, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 12, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 13, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 14, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 15, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 16, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 17, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 18, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 19, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 20, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 21, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 22, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 23, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 24, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 25, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 26, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 27, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 28, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 29, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 30, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 31, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 32, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 33, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 34, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 35, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 36, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 37, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 38, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 39, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 40, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 41, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 42, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 43, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 44, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 45, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 46, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 47, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 48, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 49, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 50, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 51, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 52, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 53, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 54, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 55, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 56, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 57, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 58, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 59, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 60, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 61, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 62, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 63, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 64, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 65, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 66, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 67, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 68, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 69, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 70, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 71, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 72, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 73, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 74, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 75, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 76, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 77, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 78, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 79, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 80, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 81, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 82, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 83, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 84, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 85, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 86, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 87, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 88, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 89, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 90, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 91, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 92, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 93, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 94, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 95, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 96, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 97, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 98, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 99, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 100, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 101, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 102, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 103, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 104, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 105, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 106, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 107, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 108, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 109, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 110, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 111, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 112, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 113, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 114, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 115, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 116, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 117, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 118, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 119, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 120, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 121, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 122, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 123, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 124, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 125, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 126, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 127, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 128, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 129, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 130, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 131, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 132, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 133, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 134, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 135, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 136, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 137, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 138, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 139, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 140, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 141, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 142, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 143, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 144, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 146, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 147, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 149, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 150, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 151, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 152, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 153, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 154, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 155, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 156, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 157, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 158, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 159, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 161, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 162, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 164, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 165, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 167, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 169, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 170, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 172, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 174, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 176, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 177, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 179, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 180, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 182, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 183, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 184, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 185, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 186, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 187, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 189, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 190, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 191, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 193, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 194, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 195, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 197, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 198, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 200, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 202, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 204, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 206, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 207, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 208, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 210, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 211, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 212, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 214, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 216, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 218, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 219, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 220, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 222, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 224, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 225, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 227, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 228, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 230, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 231, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 232, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 234, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 236, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 238, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 239, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 241, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 242, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 243, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 245, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 246, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 247, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 248, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 249, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 250, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 251, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 253, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 254, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 255, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 257, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 258, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 259, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 260, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 261, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 263, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 264, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 265, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 266, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 268, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 269, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 270, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 271, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 272, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 273, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 274, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 276, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 278, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 279, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 280, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 281, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 282, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 283, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 284, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 286, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 287, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 288, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 289, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 290, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 291, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 292, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 293, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 294, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 295, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 296, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 297, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 300, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 301, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 302, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 303, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 304, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 307, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 308, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 309, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 310, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 313, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 314, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 315, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 318, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 321, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 322, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 325, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 328, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 331, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 332, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 335, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 338, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 341, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 344, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 347, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 348, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 349, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 350, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 353, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 356, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 357, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 360, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 361, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 364, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 365, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 366, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 367, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 368, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 369, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 372, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 375, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 378, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 379, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 382, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 385, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 386, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 387, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 388, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 391, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 392, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 395, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 398, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 401, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Iteration 402, covered goals total: 18/22, open independent goals: 4
+ INFO:  Forwarded: DEBUG: Adding State change Assertions
+ INFO:  Forwarded: DEBUG: Adding assertions to test Wait for 38 steps
+Wait for 1 steps
+TypeNumber '-207'
+Wait for 1 steps
+TypeText '10'
+Wait for 1 steps
+TypeText '90'
+Wait for 1 steps
+TypeText '0'
+Wait for 1 steps
+TypeText '90'
+Wait for 1 steps
+ of length 12
+ INFO:  Forwarded: DEBUG: Trace length: 6
+ INFO:  Forwarded: DEBUG: Resulting test: Wait for 38 steps
+Wait for 1 steps
+TypeNumber '-207'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "b?"
+TypeText '10'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "c?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "d?"
+TypeText '0'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "angle?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "invalid"
+
+ INFO:  Forwarded: DEBUG: Adding assertions to test Wait for 43 steps
+Wait for 1 steps
+TypeText 'Hello'
+Wait for 1 steps
+TypeText 'Hello'
+Wait for 1 steps
+TypeText 'Hello'
+Wait for 1 steps
+TypeText '90'
+Wait for 1 steps
+TypeText '90'
+Wait for 1 steps
+Wait for 99 steps
+Wait for 1 steps
+Wait for 77 steps
+Wait for 1 steps
+Wait for 70 steps
+Wait for 1 steps
+Wait for 61 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 58 steps
+Wait for 1 steps
+Wait for 25 steps
+Wait for 1 steps
+Wait for 57 steps
+Wait for 1 steps
+Wait for 54 steps
+Wait for 1 steps
+Wait for 51 steps
+Wait for 1 steps
+Wait for 50 steps
+Wait for 1 steps
+Wait for 39 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 59 steps
+Wait for 1 steps
+ of length 40
+ INFO:  Forwarded: DEBUG: Trace length: 20
+ INFO:  Forwarded: DEBUG: Resulting test: Wait for 43 steps
+Wait for 1 steps
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "b?"
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "c?"
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "d?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "angle?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "quadrilateral"
+Wait for 99 steps
+Wait for 1 steps
+Wait for 77 steps
+Wait for 1 steps
+Wait for 70 steps
+Wait for 1 steps
+Wait for 61 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 58 steps
+Wait for 1 steps
+Wait for 25 steps
+Wait for 1 steps
+Wait for 57 steps
+Wait for 1 steps
+Wait for 54 steps
+Wait for 1 steps
+Wait for 51 steps
+Wait for 1 steps
+Wait for 50 steps
+Wait for 1 steps
+Wait for 39 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 59 steps
+Wait for 1 steps
+
+ INFO:  Forwarded: Total number of tests: 2
+ INFO:  Forwarded: Test 0:
+Wait for 38 steps
+Wait for 1 steps
+TypeNumber '-207'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "b?"
+TypeText '10'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "c?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "d?"
+TypeText '0'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "angle?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "invalid"
+
+ INFO:  Forwarded: Test 1:
+Wait for 43 steps
+Wait for 1 steps
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "b?"
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "c?"
+TypeText 'Hello'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "d?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "angle?"
+TypeText '90'
+Wait for 1 steps
+assert Sprite Sprite1 is saying "quadrilateral"
+Wait for 99 steps
+Wait for 1 steps
+Wait for 77 steps
+Wait for 1 steps
+Wait for 70 steps
+Wait for 1 steps
+Wait for 61 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 58 steps
+Wait for 1 steps
+Wait for 25 steps
+Wait for 1 steps
+Wait for 57 steps
+Wait for 1 steps
+Wait for 54 steps
+Wait for 1 steps
+Wait for 51 steps
+Wait for 1 steps
+Wait for 50 steps
+Wait for 1 steps
+Wait for 39 steps
+Wait for 1 steps
+Wait for 19 steps
+Wait for 1 steps
+Wait for 59 steps
+Wait for 1 steps
+
+ INFO:  Forwarded: projectName,configName,fitnessFunctionCount,iterationCount,coveredFitnessFunctionCount,bestCoverage,testsuiteEventCount,executedEventsCount,executedTests,minimizedTests,minimizedEvents,averageTestExecutionTime,bestTestSuiteSize,numberFitnessEvaluations,createdTestsToReachFullCoverage,timeToReachFullCoverage,0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,21000,22000,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,34000,35000,36000,37000,38000,39000,40000,41000,42000,43000,44000,45000,46000,47000,48000,49000,50000,51000,52000,53000,54000,55000,56000,57000,58000,59000,60000,61000,62000,63000,64000,65000,66000,67000,68000,69000,70000,71000,72000,73000,74000,75000,76000,77000,78000,79000,80000,81000,82000,83000,84000,85000,86000,87000,88000,89000,90000,91000,92000,93000,94000,95000,96000,97000,98000,99000,100000,101000,102000,103000,104000,105000,106000,107000,108000,109000,110000,111000,112000,113000,114000,115000,116000,117000,118000,119000,120000,121000,122000,123000,124000,125000,126000,127000,128000,129000,130000,131000,132000,133000,134000,135000,136000,137000,138000,139000,140000,141000,142000,143000,144000,145000,146000,147000,148000,149000,150000,151000,152000,153000,154000,155000,156000,157000,158000,159000,160000,161000,162000,163000,164000,165000,166000,167000,168000,169000,170000,171000,172000,173000,174000,175000,176000,177000,178000,179000,180000,181000,182000,183000,184000,185000,186000,187000,188000,189000,190000,191000,192000,193000,194000,195000,196000,197000,198000,199000,200000,201000,202000,203000,204000,205000,206000,207000,208000,209000,210000,211000,212000,213000,214000,215000,216000,217000,218000,219000,220000,221000,222000,223000,224000,225000,226000,227000,228000,229000,230000,231000,232000,233000,234000,235000,236000,237000,238000,239000,240000,241000,242000,243000,244000,245000,246000,247000,248000,249000,250000,251000,252000,253000,254000,255000,256000,257000,258000,259000,260000,261000,262000,263000,264000,265000,266000,267000,268000,269000,270000,271000,272000,273000,274000,275000,276000,277000,278000,279000,280000,281000,282000,283000,284000,285000,286000,287000,288000,289000,290000,291000,292000,293000,294000,295000,296000,297000,298000,299000,300000,301000,302000,303000,304000,305000,306000,307000,308000,309000,310000,311000,312000,313000,314000,315000,316000,317000,318000,319000,320000,321000,322000,323000,324000,325000,326000,327000,328000,329000,330000,331000,332000,333000,334000,335000,336000,337000,338000,339000,340000,341000,342000,343000,344000,345000,346000,347000,348000,349000,350000,351000,352000,353000,354000,355000,356000,357000,358000,359000,360000,361000,362000,363000,364000,365000,366000,367000,368000,369000,370000,371000,372000,373000,374000,375000,376000,377000,378000,379000,380000,381000,382000,383000,384000,385000,386000,387000,388000,389000,390000,391000,392000,393000,394000,395000,396000,397000,398000,399000,400000,401000,402000,403000,404000,405000,406000,407000,408000,409000,410000,411000,412000,413000,414000,415000,416000,417000,418000,419000,420000,421000,422000,423000,424000,425000,426000,427000,428000,429000,430000,431000,432000,433000,434000,435000,436000,437000,438000,439000,440000,441000,442000,443000,444000,445000,446000,447000,448000,449000,450000,451000,452000,453000,454000,455000,456000,457000,458000,459000,460000,461000,462000,463000,464000,465000,466000,467000,468000,469000,470000,471000,472000,473000,474000,475000,476000,477000,478000,479000,480000,481000,482000,483000,484000,485000,486000,487000,488000,489000,490000,491000,492000,493000,494000,495000,496000,497000,498000,499000,500000,501000,502000,503000,504000,505000,506000,507000,508000,509000,510000,511000,512000,513000,514000,515000,516000,517000,518000,519000,520000,521000,522000,523000,524000,525000,526000,527000,528000,529000,530000,531000,532000,533000,534000,535000,536000,537000,538000,539000,540000,541000,542000,543000,544000,545000,546000,547000,548000,549000,550000,551000,552000,553000,554000,555000,556000,557000,558000,559000,560000,561000,562000,563000,564000,565000,566000,567000,568000,569000,570000,571000,572000,573000,574000,575000,576000,577000,578000,579000,580000,581000,582000,583000,584000,585000,586000,587000,588000,589000,590000,591000,592000,593000,594000,595000,596000,597000,598000,599000,600000
+quad.sb3,mio-no-test.json-repetition-1.json,22,402,18,0.8181818181818182,52,3916,502,0,0,372.5522388059705,2,502,,,0,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18
+ DEBUG:  Downloading tests to /results 
+
+ DEBUG:  Duration: 619.695 Seconds 
+
+Creating CSV summary in /results

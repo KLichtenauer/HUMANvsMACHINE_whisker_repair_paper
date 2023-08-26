@@ -1,0 +1,42 @@
+{
+    "type": "Input",
+    "input": [
+        3,
+        "MotionXPos",
+        "DropDownMenu6"
+    ],
+    "blocks": {
+        "MotionXPos": {
+            "opcode": "motion_xposition",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "DropDownMenu6": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": true,
+            "x": 241,
+            "y": 650
+        }
+    },
+    "lists": {},
+    "stageLists": {},
+    "variables": {},
+    "stageVariables": {},
+    "broadcasts": {},
+    "shadow": true,
+    "obscured": true
+}

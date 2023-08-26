@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize rocket,initialize black hole,initialize star,initialize moon,rocket moving,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+7-Raumschiff.sb3,1687694392342,7,None,pass,pass,pass,pass,pass,5,0,0,0,48,41,0.85,0.588

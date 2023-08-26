@@ -1,0 +1,29 @@
+Zeilenbeschriftungen,Anzahl von last_duration,Summe von iteration,,,
+manual-written,60,5902,,,
+minimize-false,54,21386,,,
+minimize-true,102,27057,,,
+no-assertion,48,14960,,,
+no-test,53,18111,,,
+Gesamtergebnis,317,87416,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+Zeilenbeschriftungen,Mittelwert von last_duration,Mittelwert von iteration,,,
+manual-written,14167268.37,98.36666667,,236.1211395,3.935352325
+minimize-false,25672335.8,396.037037,,427.8722633,7.131204389
+minimize-true,21261609.47,270.57,,354.3601578,5.906002631
+no-assertion,23936679.15,311.6666667,,398.9446525,6.649077542
+no-test,23095220.08,341.7169811,,384.9203347,6.415338911
+Gesamtergebnis,21381809.67,277.5111111,,356.3634945,5.939391575
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+Zeilenbeschriftungen,Summe von iteration,Summe von last_duration,,,
+manual-written,5902,850036102,,,
+minimize-false,21386,1386306133,,,
+minimize-true,27057,2168684166,,,
+no-assertion,14960,1148960599,,,
+no-test,18111,1224046664,,,
+Gesamtergebnis,87416,6778033664,,,

@@ -1,0 +1,39 @@
+image: satantime/puppeteer-node:16.14.0-bullseye
+
+stages:
+  - build
+  - test
+  - integrationtest
+
+before_script:
+  - yarn install --cache-folder .yarn
+
+cache:
+  paths:
+    - node_modules/
+    - .yarn
+
+build_all:
+  stage: build
+  script:
+    - yarn install
+    - mkdir -p output/static
+    - yarn build-main
+    - yarn build-web
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - whisker-main/dist
+      - whisker-web/dist
+
+
+unit-tests:
+  stage: test
+  script:
+    - yarn test
+    - mkdir -p output/static
+
+integration-tests:
+    stage: integrationtest
+    script:
+        - yarn integrationtest

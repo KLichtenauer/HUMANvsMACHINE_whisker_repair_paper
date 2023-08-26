@@ -1,0 +1,61 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687849345539',
+  headless: true,
+  configPath: '/configs/mio.json-repetition-1.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/13-Winter.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 13-Winter.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687849345539
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687849345539
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: /l%];XXnBu]Z`5rj{Ynz-Schorsch of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: ]uWl/F~$8{aEj+.w7m*.-Schorsch of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: Q1f;9QTz{[Y1:^i2^c`?-Schorsch of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: EcuTcGy~KN%PTQ4Kqh?c-Schorsch of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: ;:)jK.Z)Ovem6Mson,.w-Schorsch of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: %c5y/ZV!=L{{kHSU=c9/-Schorsch of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: =kqjDFe=:yKZ}{V2409T-Schorsch of type event_whenbroadcastreceived
+ INFO:  Forwarded: DEBUG: Found test for goal: 6BGM8}2D;1KEs|$e^ITM-Schorsch of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: uD/$oy!Z/wH9^w+Mq(9=-Schorsch of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: p.vWviu+|CtA[#d]=6p%-Schorsch of type pen_setPenSizeTo
+ INFO:  Forwarded: DEBUG: Found test for goal: J]0p6q}k?tD2amZf73uO-Schorsch of type pen_setPenColorToColor
+ INFO:  Forwarded: DEBUG: Found test for goal: 7Yry!#@PhA(EoX55ue}s-Schorsch of type pen_penDown
+ INFO:  Forwarded: DEBUG: Found test for goal: 9u{E!.HGj(/|E=:$6{=2-Schorsch of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: WYKFZ}zuZHHrEVjwH}R0-Schorsch of type pen_penUp
+ INFO:  Forwarded: DEBUG: Found test for goal: M}qc{%5J[:dB{r}iCK-u-Stella of type pen_setPenColorToColor
+ INFO:  Forwarded: DEBUG: Found test for goal: 4`%wh!IFyKr~ds_ZFM!;-Stella of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: JcTUHe}KHdJ^~CHxR*^r-Stella of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: 19W(hx`.qZ{.^g.?qBp+-Stella of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: Jq3oM@MlJ=Msn%epKHmI-Stella of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: ;I|jg{#NFev*B7hnQZzH-Stella of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: aLdN_WCZ_Mm~IDyWn=bH-Stella of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: -;hr9Tklgb}{),/K,1iK-Stella of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: NiGvzjtgxv!]A@]h@_c_-Stella of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: `}Kx`@vqvtI8S+F).`AG-Stella of type pen_penUp
+ INFO:  Forwarded: DEBUG: Found test for goal: xPCa6~S`IT*~=24,M;LD-Stella of type pen_setPenSizeTo
+ INFO:  Forwarded: DEBUG: Found test for goal: 4Pat5l[IGK7^?!UAC}U$-Stella of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: QHd@X.$y2,+FF/zC`?C4-Stella of type event_broadcast
+ INFO:  Forwarded: DEBUG: Found test for goal: K|wGFh^c$$Q7H_btVts+-Stella of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: S,m?NWN#(*XYAKn^}f)/-Stella of type pen_penUp
+ INFO:  Forwarded: DEBUG: Found test for goal: D?^{S8dIi7FAOU`d.R9E-Stella of type pen_clear
+ INFO:  Forwarded: DEBUG: Found test for goal: _hZOANyZ5?Nni@v#lS9h-Stella of type pen_penDown
+ INFO:  Forwarded: DEBUG: Found test for goal: L35yYP_ar+(!D.kU?zv^-Stella of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 32/32, open independent goals: 0
+ INFO:  Forwarded: DEBUG: Starting minimization for 1 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 147 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 138 fewer events and a duration of 442955 ms
+ INFO:  Forwarded: DEBUG: Starting minimization for 147 events and a time-limit of Infinity

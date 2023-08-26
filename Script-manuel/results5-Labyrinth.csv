@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,Player visible,Money visible,Friend visible,Player touches Money,text show at beginning,super not show at beginning,beginning text not after player money touch,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+5-Labyrinth.sb3,736,10,None,pass,pass,pass,fail,pass,fail,pass,5,2,0,0,37,35,0.95,3.949

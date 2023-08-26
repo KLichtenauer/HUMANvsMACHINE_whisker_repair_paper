@@ -1,0 +1,872 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687936769771',
+  headless: true,
+  configPath: '/configs/mio-no-test.json-repetition-3.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/7-Raumschiff.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 7-Raumschiff.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687936769771
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687936769771
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: .i5`loL]*}5VGzKI@YS=-Raumschiff of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: Idp[K:f{?S*T6:}]vb7Q-Raumschiff of type looks_setsizeto
+ INFO:  Forwarded: DEBUG: Found test for goal: )z]#AGMeuwS[^6?OqgW1-Raumschiff of type looks_switchcostumeto
+ INFO:  Forwarded: DEBUG: Found test for goal: }wA~Uw]$G:-DEa:LWvq.-Raumschiff of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: -afH5U~$cZJ7MLp8n$a0-Raumschiff of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: $ZjDRO::yMY`hqDNA4?Y-Raumschiff of type looks_nextbackdrop
+ INFO:  Forwarded: DEBUG: Found test for goal: 3U5,Y^8;!I`R!j5.=$px-Raumschiff of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: sp[kyW89:r%_{0/VF87:-Raumschiff of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: 4mMpA){7ha!FO]_Emd?f-Raumschiff of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: CpTVXrg`{tpH?-rPR}B]-Raumschiff of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: Le;6?cb+CUDaYkX{d]/N-Raumschiff of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: (`vrp:_[R:VsZq.AX2tq-Raumschiff of type sound_playuntildone
+ INFO:  Forwarded: DEBUG: Found test for goal: 18:+Nl4+Zl^FOwblhh4W-Raumschiff of type looks_setsizeto
+ INFO:  Forwarded: DEBUG: Found test for goal: wzfd{0H[5#[dO;,KZi8.-Raumschiff of type control_stop
+ INFO:  Forwarded: DEBUG: Found test for goal: ?0C-p1)HAESoBXZox(v--Raumschiff of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: ?-_!ip8m5bzEke%KKm[R-Raumschiff of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: cwGLQE8+TRuKxi%JMJPe-Raumschiff of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: $f%t[~~a}Q5a)G~6)/~N-Raumschiff of type looks_say
+ INFO:  Forwarded: DEBUG: Found test for goal: mW;x+wiFU9Ml()6-UUnt-Raumschiff of type motion_glideto
+ INFO:  Forwarded: DEBUG: Found test for goal: 77-EktsN06FfeMU!ry3g-Raumschiff of type sound_playuntildone
+ INFO:  Forwarded: DEBUG: Found test for goal: kBAa-ah!-oP1T?oazLR0-Raumschiff of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: nDJ]jFL|.*[K}ZgQ)iC/-Raumschiff of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 2eQe}_RS_trQf:Q3}bW5-Raumschiff of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: R#YX3^JrA;.PxV{T[gB8-Raumschiff of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: 6v8bb8.z9qldmacUo_X0-Schwarzes Loch of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: B5D2]q#|Jpj2}FbGuiPS-Schwarzes Loch of type looks_gotofrontback
+ INFO:  Forwarded: DEBUG: Found test for goal: `x[S-D3ZHSQQ4;=GkpJ]-Schwarzes Loch of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: 9e;TTRVM]f4KAcx=NF-p-Schwarzes Loch of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 3,,T=H.`{%w:{$G7$;ZB-Schwarzes Loch of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: vrP9nLPfE#`cJh7TcG{K-Schwarzes Loch of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: 6COMJW}J8Yn-d|M;5x{E-Schwarzes Loch of type motion_turnright
+ INFO:  Forwarded: DEBUG: Found test for goal: 61N.Tv,134zZp}wG@zfA-Schwarzes Loch of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: LhIkc|46j8gDB._;%O+a-Stern of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: #F0hl~L`KiL{0l6qc,#q-Stern of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: czDe*+wr0D~ej=q,x[j,-Stern of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: @9,21Z];$6h^0B%jF;1x-Stern of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: $Q-2]%)CJBQGL%SEM::e-Stern of type control_create_clone_of
+ INFO:  Forwarded: DEBUG: Found test for goal: ~}uj[EB+p{M%NB=.kgb#-Stern of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: 4?/U+n.Ak]*Gj+RzY7iM-Stern of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: 0Kv;P14K,6s,vIkPI~Ve-Stern of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: G94@8y,03TVH-Pj!a)t7-Stern of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: }GH+NIR{8fupS}olu8dQ-Stern of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: VlmT]yWJAc;19{%n+`b9-Stern of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: Z?vNQNQhzhv%0EJvLa]W-Stern of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: :7^l66}*Q=_k=lEG%L/E-Stern of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: ;3?pC+S~`+hYM7PR`~Z0-Stern of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: B.,pK{~/}6j{K=#u]RE0-Mond of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: :9}VSWS3:EReqqisOOcs-Mond of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: kay*4s4-nWb%DsXim6qL-Mond of type looks_gotofrontback
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 2, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 3, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 4, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 5, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 6, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 7, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 8, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 9, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 10, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 11, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 12, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 13, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 14, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 15, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 16, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 17, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 18, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 19, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 20, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 21, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 22, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 23, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 24, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 25, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 26, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 27, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 28, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 29, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 30, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 31, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 32, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 33, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 34, covered goals total: 49/50, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Found test for goal: .kTE/~Mqmir,E(Mp9S:j-Raumschiff of type control_stop
+ INFO:  Forwarded: DEBUG: Iteration 35, covered goals total: 50/50, open independent goals: 0
+ INFO:  Forwarded: DEBUG: Adding State change Assertions
+ INFO:  Forwarded: DEBUG: Adding assertions to test KeyPress right arrow: 1
+Wait for 1 steps
+DragSprite Raumschiff to  -143/-8
+Wait for 1 steps
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+DragSprite Raumschiff to  -113/-17
+Wait for 1 steps
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+DragSprite Raumschiff to  104/44
+Wait for 1 steps
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+DragSprite Raumschiff to  -136/-66
+Wait for 1 steps
+DragSprite Raumschiff to  137/15
+Wait for 1 steps
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+DragSprite Raumschiff to  -131/-7
+Wait for 1 steps
+Wait for 71 steps
+Wait for 1 steps
+ of length 24
+ INFO:  Forwarded: DEBUG: Trace length: 12
+ INFO:  Forwarded: DEBUG: Resulting test: KeyPress right arrow: 1
+Wait for 1 steps
+DragSprite Raumschiff to  -143/-8
+Wait for 1 steps
+assert Clone 3 of Stern has costume 0
+assert Sprite Stern has clones: 3
+assert Sprite Schwarzes Loch has direction 120
+assert Clone 3 of Stern has direction 90
+assert Clone 3 of Stern has graphics effect color set to 0
+assert Clone 3 of Stern has graphics effect fisheye set to 0
+assert Clone 3 of Stern has graphics effect whirl set to 0
+assert Clone 3 of Stern has graphics effect pixelate set to 0
+assert Clone 3 of Stern has graphics effect mosaic set to 0
+assert Clone 3 of Stern has graphics effect brightness set to 0
+assert Clone 3 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 7
+assert Sprite Stern has layer 6
+assert Clone 3 of Stern has layer 5
+assert Sprite Raumschiff has position -143.38812453390096/-7.426523191222245
+assert Sprite Schwarzes Loch has position 4.622501868990582/-72.578341604963
+assert Clone 1 of Stern has position 140.16666666666666/19.4
+assert Clone 2 of Stern has position 140.08333333333334/20.333333333333332
+assert Clone 3 of Stern has position 140/20
+assert Clone 3 of Stern is not saying anything
+assert Clone 3 of Stern has size 50
+assert Clone 3 of Stern is visible
+assert Clone 3 of Stern has volume 100
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 130
+assert Sprite Raumschiff has position 239/-179
+assert Sprite Schwarzes Loch has position 8.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 140.25/19.1
+assert Clone 2 of Stern has position 140.16666666666666/20.666666666666668
+assert Clone 3 of Stern has position 139.76666666666668/20.1
+assert Sprite Raumschiff is saying "Überstanden!"
+assert Sprite Stern variable xPosition has value -210
+assert Sprite Stern variable yPosition has value 150
+DragSprite Raumschiff to  -113/-17
+Wait for 1 steps
+assert Clone 4 of Stern has costume 0
+assert Sprite Stern has clones: 4
+assert Sprite Schwarzes Loch has direction 140
+assert Clone 4 of Stern has direction 90
+assert Clone 4 of Stern has graphics effect color set to 0
+assert Clone 4 of Stern has graphics effect fisheye set to 0
+assert Clone 4 of Stern has graphics effect whirl set to 0
+assert Clone 4 of Stern has graphics effect pixelate set to 0
+assert Clone 4 of Stern has graphics effect mosaic set to 0
+assert Clone 4 of Stern has graphics effect brightness set to 0
+assert Clone 4 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 8
+assert Sprite Stern has layer 7
+assert Clone 4 of Stern has layer 6
+assert Sprite Raumschiff has position -99.69809082185604/-24.59066723160082
+assert Sprite Schwarzes Loch has position 12.782851103507667/-78.2922796533957
+assert Clone 1 of Stern has position 140.33333333333334/18.8
+assert Clone 2 of Stern has position 140.25/21
+assert Clone 3 of Stern has position 139.53333333333333/20.2
+assert Clone 4 of Stern has position -210/150
+assert Clone 4 of Stern is not saying anything
+assert Clone 4 of Stern has size 50
+assert Clone 4 of Stern is visible
+assert Clone 4 of Stern has volume 100
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Clone 5 of Stern has costume 0
+assert Sprite Stern has clones: 5
+assert Sprite Schwarzes Loch has direction 150
+assert Clone 5 of Stern has direction 90
+assert Clone 5 of Stern has graphics effect color set to 0
+assert Clone 5 of Stern has graphics effect fisheye set to 0
+assert Clone 5 of Stern has graphics effect whirl set to 0
+assert Clone 5 of Stern has graphics effect pixelate set to 0
+assert Clone 5 of Stern has graphics effect mosaic set to 0
+assert Clone 5 of Stern has graphics effect brightness set to 0
+assert Clone 5 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 9
+assert Sprite Stern has layer 8
+assert Clone 5 of Stern has layer 7
+assert Sprite Raumschiff has position 239/-195
+assert Sprite Schwarzes Loch has position 15.996789151940364/-82.12250186899058
+assert Clone 1 of Stern has position 140.41666666666666/18.5
+assert Clone 2 of Stern has position 140.33333333333334/21.333333333333332
+assert Clone 3 of Stern has position 139.3/20.3
+assert Clone 4 of Stern has position -209.81666666666666/150.1
+assert Clone 5 of Stern has position -210/150
+assert Clone 5 of Stern is not saying anything
+assert Clone 5 of Stern has size 50
+assert Clone 5 of Stern is visible
+assert Clone 5 of Stern has volume 100
+DragSprite Raumschiff to  104/44
+Wait for 1 steps
+assert Clone 6 of Stern has costume 0
+assert Sprite Stern has clones: 6
+assert Sprite Schwarzes Loch has direction 160
+assert Clone 6 of Stern has direction 90
+assert Clone 6 of Stern has graphics effect color set to 0
+assert Clone 6 of Stern has graphics effect fisheye set to 0
+assert Clone 6 of Stern has graphics effect whirl set to 0
+assert Clone 6 of Stern has graphics effect pixelate set to 0
+assert Clone 6 of Stern has graphics effect mosaic set to 0
+assert Clone 6 of Stern has graphics effect brightness set to 0
+assert Clone 6 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 10
+assert Sprite Stern has layer 9
+assert Clone 6 of Stern has layer 8
+assert Sprite Raumschiff has position 124.5/17.9
+assert Sprite Schwarzes Loch has position 18.496789151940366/-86.45262888791278
+assert Clone 1 of Stern has position 140.5/18.2
+assert Clone 2 of Stern has position 140.41666666666666/21.666666666666668
+assert Clone 3 of Stern has position 139.06666666666666/20.4
+assert Clone 4 of Stern has position -209.63333333333333/150.2
+assert Clone 5 of Stern has position -210.2/149.8
+assert Clone 6 of Stern has position -210/150
+assert Clone 6 of Stern is not saying anything
+assert Clone 6 of Stern has size 50
+assert Clone 6 of Stern is visible
+assert Clone 6 of Stern has volume 100
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 170
+assert Sprite Raumschiff has position 239/-184.93333333333334
+assert Sprite Schwarzes Loch has position 20.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 140.58333333333334/17.9
+assert Clone 2 of Stern has position 140.5/22
+assert Clone 3 of Stern has position 138.83333333333334/20.5
+assert Clone 4 of Stern has position -209.45/150.3
+assert Clone 5 of Stern has position -210.4/149.6
+assert Clone 6 of Stern has position -209.75/149.68333333333334
+DragSprite Raumschiff to  -136/-66
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 180
+assert Sprite Raumschiff has position -61.83333333333334/-91.16666666666666
+assert Sprite Schwarzes Loch has position 21.07513075690336/-96.07513075690336
+assert Clone 1 of Stern has position 140.66666666666666/17.6
+assert Clone 2 of Stern has position 140.58333333333334/22.333333333333332
+assert Clone 3 of Stern has position 138.6/20.6
+assert Clone 4 of Stern has position -209.26666666666668/150.4
+assert Clone 5 of Stern has position -210.6/149.4
+assert Clone 6 of Stern has position -209.5/149.36666666666667
+DragSprite Raumschiff to  137/15
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -170
+assert Sprite Raumschiff has position 172.09222090247073/-30.947683719321255
+assert Sprite Schwarzes Loch has position 21.07513075690336/-101.07513075690336
+assert Clone 1 of Stern has position 140.75/17.3
+assert Clone 2 of Stern has position 140.66666666666666/22.666666666666668
+assert Clone 3 of Stern has position 138.36666666666667/20.7
+assert Clone 4 of Stern has position -209.08333333333334/150.5
+assert Clone 5 of Stern has position -210.8/149.2
+assert Clone 6 of Stern has position -209.25/149.05
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -160
+assert Sprite Raumschiff has position 239/-195
+assert Sprite Schwarzes Loch has position 20.20688986856871/-105.9991695219644
+assert Clone 1 of Stern has position 140.83333333333334/17
+assert Clone 2 of Stern has position 140.75/23
+assert Clone 3 of Stern has position 138.13333333333333/20.8
+assert Clone 4 of Stern has position -208.9/150.6
+assert Clone 5 of Stern has position -211/149
+assert Clone 6 of Stern has position -209/148.73333333333332
+DragSprite Raumschiff to  -131/-7
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -150
+assert Sprite Raumschiff has position -13.872895205054334/-63.57648368110082
+assert Sprite Schwarzes Loch has position 18.496789151940362/-110.69763262589395
+assert Clone 1 of Stern has position 140.91666666666666/16.7
+assert Clone 2 of Stern has position 140.83333333333334/23.333333333333332
+assert Clone 3 of Stern has position 137.9/20.9
+assert Clone 4 of Stern has position -208.71666666666667/150.7
+assert Clone 5 of Stern has position -211.2/148.8
+assert Clone 6 of Stern has position -208.75/148.41666666666666
+Wait for 71 steps
+Wait for 1 steps
+assert Sprite Stern has clones: 0
+assert Sprite Schwarzes Loch has direction 90
+assert Sprite Raumschiff has layer 4
+assert Sprite Stern has layer 3
+assert Sprite Raumschiff has position 239/-193
+assert Sprite Schwarzes Loch has position -10/-70
+assert Sprite Raumschiff is not saying anything
+assert Sprite Raumschiff has size 5
+
+ INFO:  Forwarded: DEBUG: Adding assertions to test Wait for 75 steps
+Wait for 1 steps
+KeyPress right arrow: 1
+Wait for 1 steps
+KeyPress right arrow: 1
+Wait for 1 steps
+DragSprite Raumschiff to  240/-161
+Wait for 1 steps
+Wait for 56 steps
+Wait for 1 steps
+KeyPress right arrow: 2
+Wait for 1 steps
+Wait for 62 steps
+Wait for 1 steps
+DragSprite Raumschiff to  -85/-88
+Wait for 1 steps
+KeyPress right arrow: 3
+Wait for 1 steps
+KeyPress right arrow: 1
+Wait for 1 steps
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+DragSprite Raumschiff to  95/90
+Wait for 1 steps
+KeyPress right arrow: 4
+Wait for 1 steps
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+Wait for 57 steps
+Wait for 1 steps
+ of length 30
+ INFO:  Forwarded: DEBUG: Trace length: 15
+ INFO:  Forwarded: DEBUG: Resulting test: Wait for 75 steps
+Wait for 1 steps
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 0
+assert Sprite Schwarzes Loch has direction 150
+assert Sprite Raumschiff has position -219.92906647289348/-94.62371137574192
+assert Sprite Schwarzes Loch has position 15.996789151940364/-82.12250186899058
+assert Clone 1 of Stern has position 143.93333333333334/9.2
+assert Clone 2 of Stern has position 145.25/39.75
+assert Clone 3 of Stern has position 125.53333333333333/20.633333333333333
+assert Clone 4 of Stern has position -224.8/140.6
+assert Clone 5 of Stern has position -217.91666666666666/160.68333333333334
+assert Clone 6 of Stern has position -198.66666666666666/145.33333333333334
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 15
+assert Sprite Schwarzes Loch has direction 170
+assert Sprite Raumschiff has position -219.67024742779097/-92.65778554945285
+assert Sprite Schwarzes Loch has position 20.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 143.8/10.1
+assert Clone 2 of Stern has position 145.28333333333333/39.71666666666667
+assert Clone 3 of Stern has position 125.46666666666667/19.866666666666667
+assert Clone 4 of Stern has position -224.6/141.03333333333333
+assert Clone 5 of Stern has position -218.08333333333334/159.71666666666667
+assert Clone 6 of Stern has position -198.4/145.2
+DragSprite Raumschiff to  240/-161
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 180
+assert Sprite Raumschiff has position 240.2588190451025/-160.4213578419204
+assert Sprite Schwarzes Loch has position 21.07513075690336/-96.07513075690336
+assert Clone 1 of Stern has position 143.73333333333332/10.549999999999999
+assert Clone 2 of Stern has position 145.3/39.7
+assert Clone 3 of Stern has position 125.43333333333334/19.483333333333334
+assert Clone 4 of Stern has position -224.5/141.25
+assert Clone 5 of Stern has position -218.16666666666666/159.23333333333332
+assert Clone 6 of Stern has position -198.26666666666668/145.13333333333333
+assert Sprite Raumschiff is saying "Überstanden!"
+Wait for 56 steps
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 30
+assert Sprite Raumschiff has position 246.2588190451025/-171.92000269019522
+assert Sprite Schwarzes Loch has position -33.49678915194036/-86.45262888791278
+assert Clone 1 of Stern has position 144.75/25.75
+assert Clone 2 of Stern has position 143.9/30.6
+assert Clone 3 of Stern has position 130.71666666666667/9.066666666666666
+assert Clone 4 of Stern has position -215.41666666666666/154.48333333333332
+assert Clone 5 of Stern has position -217.33333333333334/142.5
+assert Clone 6 of Stern has position -196.35/141.85
+KeyPress right arrow: 2
+Wait for 1 steps
+assert Sprite Raumschiff has direction 45
+assert Sprite Schwarzes Loch has direction 60
+assert Sprite Raumschiff has position 247.20710678118655/-169.38094467893515
+assert Sprite Schwarzes Loch has position -23.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 145.5/25.1
+assert Clone 2 of Stern has position 143.45/28.8
+assert Clone 3 of Stern has position 132.26666666666665/10.466666666666667
+assert Clone 4 of Stern has position -214.16666666666666/155.43333333333334
+assert Clone 5 of Stern has position -215.93333333333334/144.15
+assert Clone 6 of Stern has position -197.8/141.8
+Wait for 62 steps
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -30
+assert Sprite Raumschiff has position 255/-124.8332174641823
+assert Sprite Schwarzes Loch has position -30.996789151940362/-115.02775964481614
+assert Clone 1 of Stern has position 144.66666666666666/16.666666666666668
+assert Clone 2 of Stern has position 140.48333333333332/9.649999999999999
+assert Clone 3 of Stern has position 153.2/27.7
+assert Clone 4 of Stern has position -195.53333333333333/159.33333333333334
+assert Clone 5 of Stern has position -201.5/167.75
+assert Clone 6 of Stern has position -215.16666666666666/139.83333333333334
+DragSprite Raumschiff to  -85/-88
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -20
+assert Sprite Raumschiff has position -85.08920660363327/-87.94996076548868
+assert Sprite Schwarzes Loch has position -33.49678915194036/-110.69763262589395
+assert Clone 1 of Stern has position 144.1/16.7
+assert Clone 2 of Stern has position 140.66666666666666/10
+assert Clone 3 of Stern has position 153.1/27.516666666666666
+assert Clone 4 of Stern has position -195.56666666666666/158.66666666666666
+assert Clone 5 of Stern has position -202/167.6
+assert Clone 6 of Stern has position -214.75/139.75
+KeyPress right arrow: 3
+Wait for 1 steps
+assert Sprite Raumschiff has direction 90
+assert Sprite Schwarzes Loch has direction 20
+assert Sprite Raumschiff has position -81.55014859237322/-86.4840349391996
+assert Sprite Schwarzes Loch has position -35.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 141.83333333333334/16.833333333333332
+assert Clone 2 of Stern has position 141.4/11.4
+assert Clone 3 of Stern has position 152.7/26.78333333333333
+assert Clone 4 of Stern has position -195.7/156
+assert Clone 5 of Stern has position -204/167
+assert Clone 6 of Stern has position -213.08333333333334/139.41666666666666
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 105
+assert Sprite Schwarzes Loch has direction 40
+assert Sprite Raumschiff has position -79.58422276608415/-86.74285398430213
+assert Sprite Schwarzes Loch has position -30.996789151940362/-82.12250186899058
+assert Clone 1 of Stern has position 140.7/16.9
+assert Clone 2 of Stern has position 141.76666666666668/12.1
+assert Clone 3 of Stern has position 152.5/26.416666666666664
+assert Clone 4 of Stern has position -195.76666666666668/154.66666666666666
+assert Clone 5 of Stern has position -205/166.7
+assert Clone 6 of Stern has position -212.25/139.25
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 50
+assert Sprite Raumschiff has position 259/-186.2588190451025
+assert Sprite Schwarzes Loch has position -27.782851103507667/-78.2922796533957
+assert Clone 1 of Stern has position 140.13333333333333/16.933333333333334
+assert Clone 2 of Stern has position 141.95/12.450000000000001
+assert Clone 3 of Stern has position 152.4/26.233333333333334
+assert Clone 4 of Stern has position -195.8/154
+assert Clone 5 of Stern has position -205.5/166.55
+assert Clone 6 of Stern has position -211.83333333333334/139.16666666666666
+DragSprite Raumschiff to  95/90
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 60
+assert Sprite Raumschiff has position 96.82782461768986/90.4790807043744
+assert Sprite Schwarzes Loch has position -23.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 139.56666666666666/16.966666666666665
+assert Clone 2 of Stern has position 142.13333333333333/12.8
+assert Clone 3 of Stern has position 152.3/26.05
+assert Clone 4 of Stern has position -195.83333333333334/153.33333333333334
+assert Clone 5 of Stern has position -206/166.4
+assert Clone 6 of Stern has position -211.41666666666666/139.08333333333334
+KeyPress right arrow: 4
+Wait for 1 steps
+assert Sprite Raumschiff has direction 165
+assert Sprite Schwarzes Loch has direction 110
+assert Sprite Raumschiff has position 100.12570167405244/87.18120364801182
+assert Sprite Schwarzes Loch has position -0.07596123493896023/-70.86824088833465
+assert Clone 1 of Stern has position 136.73333333333335/17.133333333333333
+assert Clone 2 of Stern has position 143.05/14.55
+assert Clone 3 of Stern has position 151.8/25.133333333333333
+assert Clone 4 of Stern has position -196/150
+assert Clone 5 of Stern has position -208.5/165.65
+assert Clone 6 of Stern has position -209.33333333333334/138.66666666666666
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 120
+assert Sprite Raumschiff has position 240.2588190451025/-180.96592582628907
+assert Sprite Schwarzes Loch has position 4.622501868990582/-72.578341604963
+assert Clone 1 of Stern has position 136.16666666666666/17.166666666666668
+assert Clone 2 of Stern has position 143.23333333333332/14.9
+assert Clone 3 of Stern has position 151.7/24.95
+assert Clone 4 of Stern has position -196.03333333333333/149.33333333333334
+assert Clone 5 of Stern has position -209/165.5
+assert Clone 6 of Stern has position -208.91666666666666/138.58333333333334
+Wait for 57 steps
+Wait for 1 steps
+assert Sprite Stern has clones: 0
+assert Sprite Schwarzes Loch has direction 160
+assert Sprite Raumschiff has layer 4
+assert Sprite Stern has layer 3
+assert Sprite Raumschiff has position 241.29409522551256/-184.82962913144533
+assert Sprite Schwarzes Loch has position 18.496789151940366/-86.45262888791278
+assert Sprite Raumschiff is not saying anything
+
+ INFO:  Forwarded: Total number of tests: 2
+ INFO:  Forwarded: Test 0:
+KeyPress right arrow: 1
+Wait for 1 steps
+DragSprite Raumschiff to  -143/-8
+Wait for 1 steps
+assert Clone 3 of Stern has costume 0
+assert Sprite Stern has clones: 3
+assert Sprite Schwarzes Loch has direction 120
+assert Clone 3 of Stern has direction 90
+assert Clone 3 of Stern has graphics effect color set to 0
+assert Clone 3 of Stern has graphics effect fisheye set to 0
+assert Clone 3 of Stern has graphics effect whirl set to 0
+assert Clone 3 of Stern has graphics effect pixelate set to 0
+assert Clone 3 of Stern has graphics effect mosaic set to 0
+assert Clone 3 of Stern has graphics effect brightness set to 0
+assert Clone 3 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 7
+assert Sprite Stern has layer 6
+assert Clone 3 of Stern has layer 5
+assert Sprite Raumschiff has position -143.38812453390096/-7.426523191222245
+assert Sprite Schwarzes Loch has position 4.622501868990582/-72.578341604963
+assert Clone 1 of Stern has position 140.16666666666666/19.4
+assert Clone 2 of Stern has position 140.08333333333334/20.333333333333332
+assert Clone 3 of Stern has position 140/20
+assert Clone 3 of Stern is not saying anything
+assert Clone 3 of Stern has size 50
+assert Clone 3 of Stern is visible
+assert Clone 3 of Stern has volume 100
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 130
+assert Sprite Raumschiff has position 239/-179
+assert Sprite Schwarzes Loch has position 8.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 140.25/19.1
+assert Clone 2 of Stern has position 140.16666666666666/20.666666666666668
+assert Clone 3 of Stern has position 139.76666666666668/20.1
+assert Sprite Raumschiff is saying "Überstanden!"
+assert Sprite Stern variable xPosition has value -210
+assert Sprite Stern variable yPosition has value 150
+DragSprite Raumschiff to  -113/-17
+Wait for 1 steps
+assert Clone 4 of Stern has costume 0
+assert Sprite Stern has clones: 4
+assert Sprite Schwarzes Loch has direction 140
+assert Clone 4 of Stern has direction 90
+assert Clone 4 of Stern has graphics effect color set to 0
+assert Clone 4 of Stern has graphics effect fisheye set to 0
+assert Clone 4 of Stern has graphics effect whirl set to 0
+assert Clone 4 of Stern has graphics effect pixelate set to 0
+assert Clone 4 of Stern has graphics effect mosaic set to 0
+assert Clone 4 of Stern has graphics effect brightness set to 0
+assert Clone 4 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 8
+assert Sprite Stern has layer 7
+assert Clone 4 of Stern has layer 6
+assert Sprite Raumschiff has position -99.69809082185604/-24.59066723160082
+assert Sprite Schwarzes Loch has position 12.782851103507667/-78.2922796533957
+assert Clone 1 of Stern has position 140.33333333333334/18.8
+assert Clone 2 of Stern has position 140.25/21
+assert Clone 3 of Stern has position 139.53333333333333/20.2
+assert Clone 4 of Stern has position -210/150
+assert Clone 4 of Stern is not saying anything
+assert Clone 4 of Stern has size 50
+assert Clone 4 of Stern is visible
+assert Clone 4 of Stern has volume 100
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Clone 5 of Stern has costume 0
+assert Sprite Stern has clones: 5
+assert Sprite Schwarzes Loch has direction 150
+assert Clone 5 of Stern has direction 90
+assert Clone 5 of Stern has graphics effect color set to 0
+assert Clone 5 of Stern has graphics effect fisheye set to 0
+assert Clone 5 of Stern has graphics effect whirl set to 0
+assert Clone 5 of Stern has graphics effect pixelate set to 0
+assert Clone 5 of Stern has graphics effect mosaic set to 0
+assert Clone 5 of Stern has graphics effect brightness set to 0
+assert Clone 5 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 9
+assert Sprite Stern has layer 8
+assert Clone 5 of Stern has layer 7
+assert Sprite Raumschiff has position 239/-195
+assert Sprite Schwarzes Loch has position 15.996789151940364/-82.12250186899058
+assert Clone 1 of Stern has position 140.41666666666666/18.5
+assert Clone 2 of Stern has position 140.33333333333334/21.333333333333332
+assert Clone 3 of Stern has position 139.3/20.3
+assert Clone 4 of Stern has position -209.81666666666666/150.1
+assert Clone 5 of Stern has position -210/150
+assert Clone 5 of Stern is not saying anything
+assert Clone 5 of Stern has size 50
+assert Clone 5 of Stern is visible
+assert Clone 5 of Stern has volume 100
+DragSprite Raumschiff to  104/44
+Wait for 1 steps
+assert Clone 6 of Stern has costume 0
+assert Sprite Stern has clones: 6
+assert Sprite Schwarzes Loch has direction 160
+assert Clone 6 of Stern has direction 90
+assert Clone 6 of Stern has graphics effect color set to 0
+assert Clone 6 of Stern has graphics effect fisheye set to 0
+assert Clone 6 of Stern has graphics effect whirl set to 0
+assert Clone 6 of Stern has graphics effect pixelate set to 0
+assert Clone 6 of Stern has graphics effect mosaic set to 0
+assert Clone 6 of Stern has graphics effect brightness set to 0
+assert Clone 6 of Stern has graphics effect ghost set to 0
+assert Sprite Raumschiff has layer 10
+assert Sprite Stern has layer 9
+assert Clone 6 of Stern has layer 8
+assert Sprite Raumschiff has position 124.5/17.9
+assert Sprite Schwarzes Loch has position 18.496789151940366/-86.45262888791278
+assert Clone 1 of Stern has position 140.5/18.2
+assert Clone 2 of Stern has position 140.41666666666666/21.666666666666668
+assert Clone 3 of Stern has position 139.06666666666666/20.4
+assert Clone 4 of Stern has position -209.63333333333333/150.2
+assert Clone 5 of Stern has position -210.2/149.8
+assert Clone 6 of Stern has position -210/150
+assert Clone 6 of Stern is not saying anything
+assert Clone 6 of Stern has size 50
+assert Clone 6 of Stern is visible
+assert Clone 6 of Stern has volume 100
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 170
+assert Sprite Raumschiff has position 239/-184.93333333333334
+assert Sprite Schwarzes Loch has position 20.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 140.58333333333334/17.9
+assert Clone 2 of Stern has position 140.5/22
+assert Clone 3 of Stern has position 138.83333333333334/20.5
+assert Clone 4 of Stern has position -209.45/150.3
+assert Clone 5 of Stern has position -210.4/149.6
+assert Clone 6 of Stern has position -209.75/149.68333333333334
+DragSprite Raumschiff to  -136/-66
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 180
+assert Sprite Raumschiff has position -61.83333333333334/-91.16666666666666
+assert Sprite Schwarzes Loch has position 21.07513075690336/-96.07513075690336
+assert Clone 1 of Stern has position 140.66666666666666/17.6
+assert Clone 2 of Stern has position 140.58333333333334/22.333333333333332
+assert Clone 3 of Stern has position 138.6/20.6
+assert Clone 4 of Stern has position -209.26666666666668/150.4
+assert Clone 5 of Stern has position -210.6/149.4
+assert Clone 6 of Stern has position -209.5/149.36666666666667
+DragSprite Raumschiff to  137/15
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -170
+assert Sprite Raumschiff has position 172.09222090247073/-30.947683719321255
+assert Sprite Schwarzes Loch has position 21.07513075690336/-101.07513075690336
+assert Clone 1 of Stern has position 140.75/17.3
+assert Clone 2 of Stern has position 140.66666666666666/22.666666666666668
+assert Clone 3 of Stern has position 138.36666666666667/20.7
+assert Clone 4 of Stern has position -209.08333333333334/150.5
+assert Clone 5 of Stern has position -210.8/149.2
+assert Clone 6 of Stern has position -209.25/149.05
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -160
+assert Sprite Raumschiff has position 239/-195
+assert Sprite Schwarzes Loch has position 20.20688986856871/-105.9991695219644
+assert Clone 1 of Stern has position 140.83333333333334/17
+assert Clone 2 of Stern has position 140.75/23
+assert Clone 3 of Stern has position 138.13333333333333/20.8
+assert Clone 4 of Stern has position -208.9/150.6
+assert Clone 5 of Stern has position -211/149
+assert Clone 6 of Stern has position -209/148.73333333333332
+DragSprite Raumschiff to  -131/-7
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -150
+assert Sprite Raumschiff has position -13.872895205054334/-63.57648368110082
+assert Sprite Schwarzes Loch has position 18.496789151940362/-110.69763262589395
+assert Clone 1 of Stern has position 140.91666666666666/16.7
+assert Clone 2 of Stern has position 140.83333333333334/23.333333333333332
+assert Clone 3 of Stern has position 137.9/20.9
+assert Clone 4 of Stern has position -208.71666666666667/150.7
+assert Clone 5 of Stern has position -211.2/148.8
+assert Clone 6 of Stern has position -208.75/148.41666666666666
+Wait for 71 steps
+Wait for 1 steps
+assert Sprite Stern has clones: 0
+assert Sprite Schwarzes Loch has direction 90
+assert Sprite Raumschiff has layer 4
+assert Sprite Stern has layer 3
+assert Sprite Raumschiff has position 239/-193
+assert Sprite Schwarzes Loch has position -10/-70
+assert Sprite Raumschiff is not saying anything
+assert Sprite Raumschiff has size 5
+
+ INFO:  Forwarded: Test 1:
+Wait for 75 steps
+Wait for 1 steps
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 0
+assert Sprite Schwarzes Loch has direction 150
+assert Sprite Raumschiff has position -219.92906647289348/-94.62371137574192
+assert Sprite Schwarzes Loch has position 15.996789151940364/-82.12250186899058
+assert Clone 1 of Stern has position 143.93333333333334/9.2
+assert Clone 2 of Stern has position 145.25/39.75
+assert Clone 3 of Stern has position 125.53333333333333/20.633333333333333
+assert Clone 4 of Stern has position -224.8/140.6
+assert Clone 5 of Stern has position -217.91666666666666/160.68333333333334
+assert Clone 6 of Stern has position -198.66666666666666/145.33333333333334
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 15
+assert Sprite Schwarzes Loch has direction 170
+assert Sprite Raumschiff has position -219.67024742779097/-92.65778554945285
+assert Sprite Schwarzes Loch has position 20.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 143.8/10.1
+assert Clone 2 of Stern has position 145.28333333333333/39.71666666666667
+assert Clone 3 of Stern has position 125.46666666666667/19.866666666666667
+assert Clone 4 of Stern has position -224.6/141.03333333333333
+assert Clone 5 of Stern has position -218.08333333333334/159.71666666666667
+assert Clone 6 of Stern has position -198.4/145.2
+DragSprite Raumschiff to  240/-161
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 180
+assert Sprite Raumschiff has position 240.2588190451025/-160.4213578419204
+assert Sprite Schwarzes Loch has position 21.07513075690336/-96.07513075690336
+assert Clone 1 of Stern has position 143.73333333333332/10.549999999999999
+assert Clone 2 of Stern has position 145.3/39.7
+assert Clone 3 of Stern has position 125.43333333333334/19.483333333333334
+assert Clone 4 of Stern has position -224.5/141.25
+assert Clone 5 of Stern has position -218.16666666666666/159.23333333333332
+assert Clone 6 of Stern has position -198.26666666666668/145.13333333333333
+assert Sprite Raumschiff is saying "Überstanden!"
+Wait for 56 steps
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 30
+assert Sprite Raumschiff has position 246.2588190451025/-171.92000269019522
+assert Sprite Schwarzes Loch has position -33.49678915194036/-86.45262888791278
+assert Clone 1 of Stern has position 144.75/25.75
+assert Clone 2 of Stern has position 143.9/30.6
+assert Clone 3 of Stern has position 130.71666666666667/9.066666666666666
+assert Clone 4 of Stern has position -215.41666666666666/154.48333333333332
+assert Clone 5 of Stern has position -217.33333333333334/142.5
+assert Clone 6 of Stern has position -196.35/141.85
+KeyPress right arrow: 2
+Wait for 1 steps
+assert Sprite Raumschiff has direction 45
+assert Sprite Schwarzes Loch has direction 60
+assert Sprite Raumschiff has position 247.20710678118655/-169.38094467893515
+assert Sprite Schwarzes Loch has position -23.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 145.5/25.1
+assert Clone 2 of Stern has position 143.45/28.8
+assert Clone 3 of Stern has position 132.26666666666665/10.466666666666667
+assert Clone 4 of Stern has position -214.16666666666666/155.43333333333334
+assert Clone 5 of Stern has position -215.93333333333334/144.15
+assert Clone 6 of Stern has position -197.8/141.8
+Wait for 62 steps
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -30
+assert Sprite Raumschiff has position 255/-124.8332174641823
+assert Sprite Schwarzes Loch has position -30.996789151940362/-115.02775964481614
+assert Clone 1 of Stern has position 144.66666666666666/16.666666666666668
+assert Clone 2 of Stern has position 140.48333333333332/9.649999999999999
+assert Clone 3 of Stern has position 153.2/27.7
+assert Clone 4 of Stern has position -195.53333333333333/159.33333333333334
+assert Clone 5 of Stern has position -201.5/167.75
+assert Clone 6 of Stern has position -215.16666666666666/139.83333333333334
+DragSprite Raumschiff to  -85/-88
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction -20
+assert Sprite Raumschiff has position -85.08920660363327/-87.94996076548868
+assert Sprite Schwarzes Loch has position -33.49678915194036/-110.69763262589395
+assert Clone 1 of Stern has position 144.1/16.7
+assert Clone 2 of Stern has position 140.66666666666666/10
+assert Clone 3 of Stern has position 153.1/27.516666666666666
+assert Clone 4 of Stern has position -195.56666666666666/158.66666666666666
+assert Clone 5 of Stern has position -202/167.6
+assert Clone 6 of Stern has position -214.75/139.75
+KeyPress right arrow: 3
+Wait for 1 steps
+assert Sprite Raumschiff has direction 90
+assert Sprite Schwarzes Loch has direction 20
+assert Sprite Raumschiff has position -81.55014859237322/-86.4840349391996
+assert Sprite Schwarzes Loch has position -35.20688986856871/-91.15109199184232
+assert Clone 1 of Stern has position 141.83333333333334/16.833333333333332
+assert Clone 2 of Stern has position 141.4/11.4
+assert Clone 3 of Stern has position 152.7/26.78333333333333
+assert Clone 4 of Stern has position -195.7/156
+assert Clone 5 of Stern has position -204/167
+assert Clone 6 of Stern has position -213.08333333333334/139.41666666666666
+KeyPress right arrow: 1
+Wait for 1 steps
+assert Sprite Raumschiff has direction 105
+assert Sprite Schwarzes Loch has direction 40
+assert Sprite Raumschiff has position -79.58422276608415/-86.74285398430213
+assert Sprite Schwarzes Loch has position -30.996789151940362/-82.12250186899058
+assert Clone 1 of Stern has position 140.7/16.9
+assert Clone 2 of Stern has position 141.76666666666668/12.1
+assert Clone 3 of Stern has position 152.5/26.416666666666664
+assert Clone 4 of Stern has position -195.76666666666668/154.66666666666666
+assert Clone 5 of Stern has position -205/166.7
+assert Clone 6 of Stern has position -212.25/139.25
+DragSprite Raumschiff to  309/-217
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 50
+assert Sprite Raumschiff has position 259/-186.2588190451025
+assert Sprite Schwarzes Loch has position -27.782851103507667/-78.2922796533957
+assert Clone 1 of Stern has position 140.13333333333333/16.933333333333334
+assert Clone 2 of Stern has position 141.95/12.450000000000001
+assert Clone 3 of Stern has position 152.4/26.233333333333334
+assert Clone 4 of Stern has position -195.8/154
+assert Clone 5 of Stern has position -205.5/166.55
+assert Clone 6 of Stern has position -211.83333333333334/139.16666666666666
+DragSprite Raumschiff to  95/90
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 60
+assert Sprite Raumschiff has position 96.82782461768986/90.4790807043744
+assert Sprite Schwarzes Loch has position -23.952628887912777/-75.078341604963
+assert Clone 1 of Stern has position 139.56666666666666/16.966666666666665
+assert Clone 2 of Stern has position 142.13333333333333/12.8
+assert Clone 3 of Stern has position 152.3/26.05
+assert Clone 4 of Stern has position -195.83333333333334/153.33333333333334
+assert Clone 5 of Stern has position -206/166.4
+assert Clone 6 of Stern has position -211.41666666666666/139.08333333333334
+KeyPress right arrow: 4
+Wait for 1 steps
+assert Sprite Raumschiff has direction 165
+assert Sprite Schwarzes Loch has direction 110
+assert Sprite Raumschiff has position 100.12570167405244/87.18120364801182
+assert Sprite Schwarzes Loch has position -0.07596123493896023/-70.86824088833465
+assert Clone 1 of Stern has position 136.73333333333335/17.133333333333333
+assert Clone 2 of Stern has position 143.05/14.55
+assert Clone 3 of Stern has position 151.8/25.133333333333333
+assert Clone 4 of Stern has position -196/150
+assert Clone 5 of Stern has position -208.5/165.65
+assert Clone 6 of Stern has position -209.33333333333334/138.66666666666666
+DragSprite Raumschiff to  240/-180
+Wait for 1 steps
+assert Sprite Schwarzes Loch has direction 120
+assert Sprite Raumschiff has position 240.2588190451025/-180.96592582628907
+assert Sprite Schwarzes Loch has position 4.622501868990582/-72.578341604963
+assert Clone 1 of Stern has position 136.16666666666666/17.166666666666668
+assert Clone 2 of Stern has position 143.23333333333332/14.9
+assert Clone 3 of Stern has position 151.7/24.95
+assert Clone 4 of Stern has position -196.03333333333333/149.33333333333334
+assert Clone 5 of Stern has position -209/165.5
+assert Clone 6 of Stern has position -208.91666666666666/138.58333333333334
+Wait for 57 steps
+Wait for 1 steps
+assert Sprite Stern has clones: 0
+assert Sprite Schwarzes Loch has direction 160
+assert Sprite Raumschiff has layer 4
+assert Sprite Stern has layer 3
+assert Sprite Raumschiff has position 241.29409522551256/-184.82962913144533
+assert Sprite Schwarzes Loch has position 18.496789151940366/-86.45262888791278
+assert Sprite Raumschiff is not saying anything
+
+ INFO:  Forwarded: projectName,configName,fitnessFunctionCount,iterationCount,coveredFitnessFunctionCount,bestCoverage,testsuiteEventCount,executedEventsCount,executedTests,minimizedTests,minimizedEvents,averageTestExecutionTime,bestTestSuiteSize,numberFitnessEvaluations,createdTestsToReachFullCoverage,timeToReachFullCoverage,0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,21000,22000,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,34000,35000,36000,37000,38000,39000,40000,41000,42000,43000,44000,45000,46000,47000,48000,49000,50000,51000,52000,53000,54000,55000,56000,57000,58000,59000,60000,61000,62000,63000,64000,65000,66000,67000,68000,69000,70000,71000,72000,73000,74000,75000,76000,77000,78000,79000,80000,81000,82000,83000,84000,85000,86000,87000,88000,89000,90000,91000,92000,93000,94000,95000,96000,97000,98000,99000,100000,101000,102000,103000,104000,105000,106000,107000,108000,109000,110000,111000,112000,113000,114000,115000,116000,117000,118000,119000,120000,121000,122000,123000,124000,125000,126000,127000,128000,129000,130000,131000,132000,133000,134000,135000,136000,137000,138000,139000,140000,141000,142000,143000,144000,145000,146000,147000,148000,149000,150000,151000,152000,153000,154000,155000,156000,157000,158000,159000,160000,161000,162000,163000,164000,165000,166000,167000,168000,169000,170000,171000,172000,173000,174000,175000,176000,177000,178000,179000,180000,181000,182000,183000,184000,185000,186000,187000,188000,189000,190000,191000,192000,193000,194000,195000,196000,197000,198000,199000,200000,201000,202000,203000,204000,205000,206000,207000,208000,209000,210000,211000,212000,213000,214000,215000,216000,217000,218000,219000,220000,221000,222000,223000,224000,225000,226000,227000,228000,229000,230000,231000,232000,233000,234000,235000,236000,237000,238000,239000,240000,241000,242000,243000,244000,245000,246000,247000,248000,249000,250000,251000,252000,253000,254000,255000,256000,257000,258000,259000,260000,261000,262000,263000,264000,265000,266000,267000,268000,269000,270000,271000,272000,273000,274000,275000,276000,277000,278000,279000,280000,281000,282000,283000,284000,285000,286000,287000,288000,289000,290000,291000,292000,293000,294000,295000,296000,297000,298000,299000,300000,301000,302000,303000,304000,305000,306000,307000,308000,309000,310000,311000,312000,313000,314000,315000,316000,317000,318000,319000,320000,321000,322000,323000,324000,325000,326000,327000,328000,329000,330000,331000,332000,333000,334000,335000,336000,337000,338000,339000,340000,341000,342000,343000,344000,345000,346000,347000,348000,349000,350000,351000,352000,353000,354000,355000,356000,357000,358000,359000,360000,361000,362000,363000,364000,365000,366000,367000,368000,369000,370000,371000,372000,373000,374000,375000,376000,377000,378000,379000,380000,381000,382000,383000,384000,385000,386000,387000,388000,389000,390000,391000,392000,393000,394000,395000,396000,397000,398000,399000,400000,401000,402000,403000,404000,405000,406000,407000,408000,409000,410000,411000,412000,413000,414000,415000,416000,417000,418000,419000,420000,421000,422000,423000,424000,425000,426000,427000,428000,429000,430000,431000,432000,433000,434000,435000,436000,437000,438000,439000,440000,441000,442000,443000,444000,445000,446000,447000,448000,449000,450000,451000,452000,453000,454000,455000,456000,457000,458000,459000,460000,461000,462000,463000,464000,465000,466000,467000,468000,469000,470000,471000,472000,473000,474000,475000,476000,477000,478000,479000,480000,481000,482000,483000,484000,485000,486000,487000,488000,489000,490000,491000,492000,493000,494000,495000,496000,497000,498000,499000,500000,501000,502000,503000,504000,505000,506000,507000,508000,509000,510000,511000,512000,513000,514000,515000,516000,517000,518000,519000,520000,521000,522000,523000,524000,525000,526000,527000,528000,529000,530000,531000,532000,533000,534000,535000,536000,537000,538000,539000,540000,541000,542000,543000,544000,545000,546000,547000,548000,549000,550000,551000,552000,553000,554000,555000,556000,557000,558000,559000,560000,561000,562000,563000,564000,565000,566000,567000,568000,569000,570000,571000,572000,573000,574000,575000,576000,577000,578000,579000,580000,581000,582000,583000,584000,585000,586000,587000,588000,589000,590000,591000,592000,593000,594000,595000,596000,597000,598000,599000,600000
+7-Raumschiff.sb3,mio-no-test.json-repetition-3.json,50,35,50,1,54,473,43,0,0,1805.2857142857147,2,43,34,127243,0,0,0,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
+ DEBUG:  Downloading tests to /results 
+
+ DEBUG:  Duration: 166.844 Seconds 
+
+Creating CSV summary in /results

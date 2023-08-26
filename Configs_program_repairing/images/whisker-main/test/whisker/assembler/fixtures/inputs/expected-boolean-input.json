@@ -1,0 +1,64 @@
+{
+    "type": "Input",
+    "input": [
+        2,
+        "LogicalOr"
+    ],
+    "blocks": {
+        "LogicalOr": {
+            "opcode": "operator_or",
+            "next": null,
+            "parent": null,
+            "inputs": {
+                "OPERAND2": [
+                    2,
+                    "Equals"
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        },
+        "Equals": {
+            "opcode": "operator_equals",
+            "next": null,
+            "parent": "LogicalOr",
+            "inputs": {
+                "OPERAND1": [
+                    3,
+                    [
+                        12,
+                        "my variable",
+                        "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                    ],
+                    [
+                        10,
+                        ""
+                    ]
+                ],
+                "OPERAND2": [
+                    1,
+                    [
+                        10,
+                        "50"
+                    ]
+                ]
+            },
+            "fields": {},
+            "shadow": false,
+            "topLevel": false
+        }
+    },
+    "lists": {},
+    "stageLists": {},
+    "variables": {},
+    "stageVariables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+            "my variable",
+            0
+        ]
+    },
+    "broadcasts": {},
+    "shadow": false,
+    "obscured": false
+}

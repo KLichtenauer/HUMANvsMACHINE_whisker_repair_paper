@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,Parrot visible,Milk visible,Parrot stops at milk,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+6-Papagei.sb3,1687694386929,7,None,pass,pass,fail,2,1,0,0,31,28,0.9,0.914

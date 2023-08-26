@@ -1,0 +1,98 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687937700359',
+  headless: true,
+  configPath: '/configs/mio-no-assertion.json-repetition-4.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/10-Pong.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 10-Pong.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687937700359
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687937700359
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: N.cu7z(];digIr0}3NTI-Ball of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: Z%3Y!p:/?p_|MNFV*lwg-Ball of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: apOFP.UrZH-gG/,,21~Y-Ball of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: QMI1.83?^P^m`8y9orId-Ball of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: {O6N1eB_|@oxRT!g:m6C-Ball of type motion_ifonedgebounce
+ INFO:  Forwarded: DEBUG: Found test for goal: ]+C3-G@oMjl!3,hSq?u:-Ball of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: 5.8|MHtM`fD60es`65bQ-Ball of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 8@J*Hhy%*nxU?0ZqFfB}-Ball of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: =K7T+*UmJt]iWxozA;}E-Ball of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: @XE#MW0fc60!GA?3C3zh-Spieler of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: }A9#@bs@Np{fvCmsj*,:-Spieler of type sensing_setdragmode
+ INFO:  Forwarded: DEBUG: Found test for goal: D9W3kl*_D6HXn%FZ/CiR-Spieler of type motion_setx
+ INFO:  Forwarded: DEBUG: Found test for goal: +.ME8EzM)-kChdgm}5{:-Spieler of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: aUE5PAc8*%/i*Y00/cFi-Spieler of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: p=nq%d+-,;Z9FZpL[E:--Spieler of type control_if
+ INFO:  Forwarded: DEBUG: Found test for goal: m9dLlwmyZVS(VLK(|#G8-Spieler of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: _tjsj*g3[^SqBXEzV^L_-Spieler of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: ;f$+S(i(%d:T8Or.U2-b-Spieler of type control_if_else
+ INFO:  Forwarded: DEBUG: Found test for goal: ,7z}NC|lW+W(nSMP=Ib1-Spieler of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: twFdH9r6p}iZa*;}y15*-Aus-Linie Spieler of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: 3+l~Y807=v$*0TC!=hSG-Aus-Linie Spieler of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: gz3@=s1F%O$6^_ccySrs-Aus-Linie Spieler of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: |{5FAq]N]b.OF;.xg,nT-Aus-Linie Spieler of type looks_switchbackdropto
+ INFO:  Forwarded: DEBUG: Found test for goal: N{9o!e))@MdZH`O!?cS%-Computer of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: ]~-i%.Mx5=6/Ae:mcT^l-Computer of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: QYTg):]6*di,Og4RL5i[-Computer of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: :/g}tmJSyG76IEjN3GV--Computer of type motion_glidesecstoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: odUAm`2)in|=jfaFX.Gs-Computer of type sensing_setdragmode
+ INFO:  Forwarded: DEBUG: Found test for goal: =#uR[,U^_A3t(P6Y#E:F-Computer of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: BgQzWqQ8pR}eGZehh_t(-Aus-Linie Computer of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: XH.kX?Z9X:P~g|W1AL7g-Aus-Linie Computer of type control_stop
+ INFO:  Forwarded: DEBUG: Found test for goal: WPO3d80exv.xV##AU9;(-Aus-Linie Computer of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: =*@9V)V811X!n+yMTE1^-Aus-Linie Computer of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: K3=AH1y,9HH.Fs[^lv_l-Aus-Linie Computer of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: %joS|?NUV~[D[yX/_.+=-Aus-Linie Computer of type looks_switchbackdropto
+ INFO:  Forwarded: DEBUG: Found test for goal: y_vbJDF^qV:B;4}g}vT%-Aus-Linie Computer of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: qs#M+kmoL,A0xVm{ibQ0-Reset-Button of type event_whenthisspriteclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: p26hgkxn-C;CF]hV)Q37-Reset-Button of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Found test for goal: Ypv6jMNgo=fRPN2D)Tzv-Reset-Button of type motion_gotoxy
+ INFO:  Forwarded: DEBUG: Found test for goal: )x7^trFP8E?Oikh.pY5|-Reset-Button of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 40/49, open independent goals: 5
+ INFO:  Forwarded: DEBUG: Found test for goal: $$mH6z#leG2Q~[H}`2D5-Ball of type motion_pointindirection
+ INFO:  Forwarded: DEBUG: Found test for goal: oyf=H1MH?zukIqe2M*K[-Ball of type motion_movesteps
+ INFO:  Forwarded: DEBUG: Found test for goal: f|s1iP?B#`)uHd7d](CB-Spieler of type motion_changeyby
+ INFO:  Forwarded: DEBUG: Found test for goal: DzHG=/DZI{h)[czPL03:-Aus-Linie Spieler of type control_stop
+ INFO:  Forwarded: DEBUG: Found test for goal: @bj8XPN3_v;nEp;#-$7~-Aus-Linie Spieler of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: g$YwL=b58me/~oU,9@LF-Aus-Linie Spieler of type looks_switchbackdropto
+ INFO:  Forwarded: DEBUG: Found test for goal: :8o`*}2_!uj7B%rpzp^f-Aus-Linie Spieler of type control_wait
+ INFO:  Forwarded: DEBUG: Iteration 2, covered goals total: 47/49, open independent goals: 2
+ INFO:  Forwarded: DEBUG: Found test for goal: 4zCLn@`9;Pz=C@k4hNx[-Spieler of type motion_changeyby
+ INFO:  Forwarded: DEBUG: Iteration 3, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 4, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 5, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 6, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 7, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 8, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 9, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 10, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 11, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 12, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 13, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 15, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 17, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 18, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 20, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 21, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 23, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 24, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 25, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 26, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 27, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Iteration 28, covered goals total: 48/49, open independent goals: 1
+ INFO:  Forwarded: DEBUG: Starting minimization for 3 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 66 events and a time-limit of Infinity

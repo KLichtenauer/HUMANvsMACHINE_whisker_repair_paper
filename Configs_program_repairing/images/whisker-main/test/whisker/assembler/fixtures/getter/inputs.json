@@ -1,0 +1,143 @@
+[
+    {
+        "type": "Input",
+        "input": [
+            1,
+            [
+                4,
+                "10"
+            ]
+        ],
+        "blocks": {},
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {},
+        "broadcasts": {},
+        "shadow": false,
+        "obscured": false
+    },
+    {
+        "type": "Input",
+        "input": [
+            1,
+            [
+                5,
+                "1"
+            ]
+        ],
+        "blocks": {},
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {},
+        "broadcasts": {},
+        "shadow": false,
+        "obscured": false
+    },
+    {
+        "type": "Input",
+        "input": [
+            1,
+            [
+                6,
+                "10"
+            ]
+        ],
+        "blocks": {},
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {},
+        "broadcasts": {},
+        "shadow": false,
+        "obscured": false
+    },
+    {
+        "type": "Block",
+        "rootID": "greater",
+        "lastID": "greater",
+        "blocks": {
+            "greater": {
+                "opcode": "operator_gt",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "OPERAND1": [
+                        3,
+                        [
+                            12,
+                            "my variable",
+                            "`jEk@4|i[#Fk?(8x)AV.-my variable"
+                        ],
+                        [
+                            10,
+                            ""
+                        ]
+                    ],
+                    "OPERAND2": [
+                        1,
+                        [
+                            10,
+                            "50"
+                        ]
+                    ]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": false
+            }
+        },
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {
+            "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+                "my variable",
+                0
+            ]
+        },
+        "broadcasts": {}
+    },
+    {
+        "type": "Input",
+        "input": [
+            3,
+            [
+                12,
+                "my variable",
+                "`jEk@4|i[#Fk?(8x)AV.-my variable"
+            ],
+            [
+                10,
+                ""
+            ]
+        ],
+        "blocks": {},
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {},
+        "broadcasts": {},
+        "shadow": false,
+        "obscured": true
+    },
+    {
+        "type": "Input",
+        "input": [
+            1,
+            [
+                10,
+                "50"
+            ]
+        ],
+        "blocks": {},
+        "lists": {},
+        "stageLists": {},
+        "variables": {},
+        "stageVariables": {},
+        "broadcasts": {},
+        "shadow": false,
+        "obscured": false
+    }
+]

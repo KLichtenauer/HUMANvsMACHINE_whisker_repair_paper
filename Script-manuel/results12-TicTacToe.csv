@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize cat,initialize tera,tera move,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+12-TicTacToe.sb3,1687694425225,4,None,pass,pass,pass,3,0,0,0,43,31,0.72,0.908

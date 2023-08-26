@@ -1,0 +1,38 @@
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ ERROR: 
+ Forwarded: Failed to load resource: net::ERR_FILE_NOT_FOUND 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0xf5800330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0xf5800330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0xf5800330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels 
+
+
+ WARNING: 
+ Forwarded: You have specified two seeds! Using seed 1687939357866 from the CLI and ignoring seed 2 defined within the config files. 
+
+
+ WARNING: 
+ Forwarded: [.WebGL-0xf5800330e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) 
+
+node:internal/process/promises:265
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+[Error: ENOTEMPTY: directory not empty, rmdir '/tmp/puppeteer_dev_chrome_profile-rYuZkJ/Default/Cache'] {
+  errno: -39,
+  code: 'ENOTEMPTY',
+  syscall: 'rmdir',
+  path: '/tmp/puppeteer_dev_chrome_profile-rYuZkJ/Default/Cache'
+}

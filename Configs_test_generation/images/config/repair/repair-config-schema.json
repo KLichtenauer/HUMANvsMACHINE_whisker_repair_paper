@@ -1,0 +1,702 @@
+{
+    "$id": "https://scratch.fim.uni-passau.de/whisker/repair-config-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Whisker repair configuration file schema definition",
+    "type": "object",
+    "properties": {
+        "repair": {
+            "const": true
+        },
+        "algorithm": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/genProg"
+                },
+                {
+                    "$ref": "#/$defs/onePlusOne"
+                },
+                {
+                    "$ref": "#/$defs/random"
+                }
+            ]
+        },
+        "fitnessFunction": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/weightedSumOfTests"
+                },
+                {
+                    "$ref": "#/$defs/countPassedTests"
+                },
+                {
+                    "$ref": "#/$defs/sumAssertionDistances"
+                },
+                {
+                    "$ref": "#/$defs/countPassedAssertions"
+                },
+                {
+                    "$ref": "#/$defs/countPassedAssertionsOnce"
+                },
+                {
+                    "$ref": "#/$defs/maximizeCoverageWithinTests"
+                },
+                {
+                    "$ref": "#/$defs/defaultFitness"
+                }
+            ]
+        },
+        "stoppingCondition": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/combined"
+                },
+                {
+                    "$ref": "#/$defs/fitnessImprovement"
+                },
+                {
+                    "$ref": "#/$defs/fixedIterations"
+                },
+                {
+                    "$ref": "#/$defs/fixedTime"
+                },
+                {
+                    "$ref": "#/$defs/optimal"
+                }
+            ]
+        },
+        "initialVariants": {
+            "$ref": "#/$defs/initialVariants"
+        },
+        "mutation": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/genProgMutation"
+                },
+                {
+                    "$ref": "#/$defs/repairMutation"
+                },
+                {
+                    "$ref": "#/$defs/esMutation"
+                }
+            ]
+        },
+        "crossover": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/genProgCrossover"
+                },
+                {
+                    "$ref": "#/$defs/repairCrossover"
+                },
+                {
+                    "const": false
+                }
+            ]
+        },
+        "selection": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/rank"
+                },
+                {
+                    "$ref": "#/$defs/tournament"
+                }
+            ]
+        },
+        "logs": {
+            "type": "object",
+            "properties": {
+                "debug": {
+                    "type": "boolean"
+                },
+                "reduceSpam": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "debug",
+                "reduceSpam"
+            ],
+            "additionalProperties": false
+        },
+        "subsumeNegativeTestResults": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "repair",
+        "algorithm",
+        "fitnessFunction",
+        "stoppingCondition",
+        "initialVariants",
+        "mutation",
+        "subsumeNegativeTestResults",
+        "logs"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+        "genProg": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "genProg"
+                },
+                "populationSize": {
+                    "enum": [
+                        4,
+                        8,
+                        12,
+                        16,
+                        20,
+                        24,
+                        28,
+                        32,
+                        36,
+                        40,
+                        44,
+                        48
+                    ]
+                },
+                "elitismSize": {
+                    "enum": [
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20,
+                        22,
+                        24
+                    ]
+                },
+                "wPath": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                "operatorOrder": {
+                    "enum": [
+                        "crossover then mutation",
+                        "mutation then crossover"
+                    ]
+                }
+            },
+            "required": [
+                "kind",
+                "populationSize",
+                "elitismSize",
+                "operatorOrder"
+            ],
+            "additionalProperties": false
+        },
+        "onePlusOne": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "onePlusOne"
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "random": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "random"
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "weightedSumOfTests": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "weightedSumOfTests"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "weights": {
+                    "type": "object",
+                    "properties": {
+                        "pass": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "fail": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    }
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "countPassedTests": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "countPassedTests"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "sumAssertionDistances": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "sumAssertionDistances"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "countPassedAssertions": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "countPassedAssertions"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "countPassedAssertionsOnce": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "countPassedAssertionsOnce"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "maximizeCoverageWithinTests": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "maximizeCoverageWithinTests"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "defaultFitness": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "defaultFitness"
+                },
+                "timeout": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "optimal": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "optimal"
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "fitnessImprovement": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "fitnessImprovement"
+                },
+                "iterationsWithoutImprovement": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind",
+                "iterationsWithoutImprovement"
+            ],
+            "additionalProperties": false
+        },
+        "fixedIterations": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "fixedIterations"
+                },
+                "iterations": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind",
+                "iterations"
+            ],
+            "additionalProperties": false
+        },
+        "fixedTime": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "fixedTime"
+                },
+                "duration": {
+                    "type": "integer",
+                    "minimum": 1
+                }
+            },
+            "required": [
+                "kind",
+                "duration"
+            ],
+            "additionalProperties": false
+        },
+        "combined": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "combined"
+                },
+                "conditions": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/$defs/optimal"
+                            },
+                            {
+                                "$ref": "#/$defs/fitnessImprovement"
+                            },
+                            {
+                                "$ref": "#/$defs/fixedIterations"
+                            },
+                            {
+                                "$ref": "#/$defs/fixedTime"
+                            }
+                        ]
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "kind",
+                "conditions"
+            ],
+            "additionalProperties": false
+        },
+        "tournament": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "tournament"
+                },
+                "size": {
+                    "type": "integer",
+                    "minimum": 2
+                }
+            },
+            "required": [
+                "kind",
+                "size"
+            ],
+            "additionalProperties": false
+        },
+        "rank": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "rank"
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "initialVariants": {
+            "type": "object",
+            "properties": {
+                "chromosome": {
+                    "type": "object",
+                    "properties": {
+                        "kind": {
+                            "enum": [
+                                "genProg",
+                                "repair"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "kind"
+                    ]
+                },
+                "generator": {
+                    "type": "object",
+                    "properties": {
+                        "kind": {
+                            "enum": [
+                                "constant",
+                                "mutating"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "kind"
+                    ]
+                }
+            },
+            "required": [
+                "chromosome",
+                "generator"
+            ],
+            "additionalProperties": false
+        },
+        "genProgMutation": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "genProg"
+                },
+                "wMut": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                }
+            },
+            "required": [
+                "kind",
+                "wMut"
+            ],
+            "additionalProperties": false
+        },
+        "repairMutation": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "repair"
+                },
+                "suspiciousness": {
+                    "$ref": "#/$defs/suspiciousness"
+                },
+                "operators": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/mutationOperator"
+                    },
+                    "uniqueItems": true
+                },
+                "probability": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                "stratifiedSampling": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "kind",
+                "suspiciousness",
+                "operators",
+                "probability",
+                "stratifiedSampling"
+            ],
+            "additionalProperties": false
+        },
+        "esMutation": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "esMutation"
+                },
+                "suspiciousness": {
+                    "$ref": "#/$defs/suspiciousness"
+                },
+                "operators": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/mutationOperator"
+                    },
+                    "uniqueItems": true
+                },
+                "probability": {
+                    "type": "object",
+                    "properties": {
+                        "deletion": {
+                            "$ref": "#/$defs/probability"
+                        },
+                        "change": {
+                            "$ref": "#/$defs/probability"
+                        },
+                        "insertion": {
+                            "$ref": "#/$defs/probability"
+                        }
+                    },
+                    "required": [
+                        "deletion",
+                        "change",
+                        "insertion"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "kind",
+                "suspiciousness",
+                "operators",
+                "probability"
+            ],
+            "additionalProperties": false
+        },
+        "mutationOperator": {
+            "enum": [
+                "deleteStatement",
+                "deleteSubStack",
+                "deleteExpression",
+                "deleteScript",
+                "switchDropDownValue",
+                "duplicateStatement",
+                "moveExpression",
+                "moveStatement",
+                "copyEventHandlerAsNewScript",
+                "swapStatements",
+                "swapExpressions",
+                "replaceStatement",
+                "replaceExpression",
+                "unwrapStack",
+                "wrapStack"
+            ]
+        },
+        "genProgCrossover": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "genProg"
+                }
+            },
+            "required": [
+                "kind"
+            ],
+            "additionalProperties": false
+        },
+        "repairCrossover": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "const": "repair"
+                },
+                "suspiciousness": {
+                    "$ref": "#/$defs/suspiciousness"
+                },
+                "operators": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/crossoverOperator"
+                    },
+                    "uniqueItems": true
+                },
+                "probability": {
+                    "$ref": "#/$defs/probability"
+                },
+                "headlessChicken": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "kind",
+                "suspiciousness",
+                "operators",
+                "probability"
+            ],
+            "additionalProperties": false
+        },
+        "crossoverOperator": {
+            "enum": [
+                "exchangeBlocksBetweenSimilarTargets",
+                "exchangeBlocksBetweenRandomTargets",
+                "exchangeScriptsBetweenSimilarTargets",
+                "exchangeScriptsBetweenRandomTargets",
+                "exchangeSimilarTargets",
+                "exchangeRandomTargets"
+            ]
+        },
+        "suspiciousness": {
+            "enum": [
+                "tarantula",
+                "ochiai",
+                "jaccard",
+                "zoltar",
+                "o",
+                "op",
+                "kulczynski2",
+                "mcCon",
+                "barinel",
+                "dstar2",
+                "dstar3",
+                "minusKBC",
+                "exam"
+            ]
+        },
+        "probability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "type": "Input",
+    "input": [
+        1,
+        "DropDownMenu1"
+    ],
+    "blocks": {
+        "DropDownMenu1": {
+            "opcode": "motion_glideto_menu",
+            "next": null,
+            "parent": null,
+            "inputs": {},
+            "fields": {
+                "TO": [
+                    "_random_",
+                    null
+                ]
+            },
+            "shadow": true,
+            "topLevel": false
+        }
+    },
+    "lists": {},
+    "stageLists": {},
+    "variables": {},
+    "stageVariables": {},
+    "broadcasts": {},
+    "shadow": true,
+    "obscured": false
+}

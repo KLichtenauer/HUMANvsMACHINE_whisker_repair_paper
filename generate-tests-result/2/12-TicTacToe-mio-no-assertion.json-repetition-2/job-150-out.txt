@@ -1,0 +1,40 @@
+Hostname:    cayman3
+CPU:         Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+Mem (KB):    32776836
+Job ID:      150
+Min proc ID: 1
+Start time:  2023-06-28T10:02:46+02:00
+
+Filesystem                     Size  Used Avail Use% Mounted on
+/dev/mapper/cayman3--vg-local   83G   29G   50G  37% /local
+/dev/mapper/cayman3--vg-root    24G   20G  3.0G  87% /
+tmpfs                           16G  388K   16G   1% /dev/shm
+
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       1.3Gi        27Gi       2.0Mi       2.3Gi        29Gi
+Swap:          3.8Gi       0.0Ki       3.8Gi
+
+Using /local/lichtenaue/docker-1
+Loading /scratch/lichtenaue/whisker-cluster-experiments/images/whisker:automatic-repair-d3278deb.tar.gz
+Using /local/lichtenaue/docker-1/home as temporary home.
+Starting dockerd with storage driver fuse-overlayfs, logging to /local/lichtenaue/docker-1/dockerd.log.
+Waiting for /dev/shm/rtd.EyYet9/docker.sock to become ready... ok
+Loaded image: whisker:automatic-repair-d3278deb
+Killing docker daemon.
+Waiting for docker daemon to exit... ok
+Removing /dev/shm/rtd.EyYet9/docker.sock.
+Removing temporary XDG_RUNTIME_DIR /dev/shm/rtd.EyYet9
+Image loaded after 12 seconds
+
+Running Whisker cross_generation at 2023-06-28T10:02:58+02:00
+Using /local/lichtenaue/docker-1/home as temporary home.
+Starting dockerd with storage driver fuse-overlayfs, logging to /local/lichtenaue/docker-1/dockerd.log.
+Waiting for /dev/shm/rtd.C3bXMY/docker.sock to become ready... ok
+INFO: Running Node.js v16.14.0 on Debian GNU/Linux 11 (bullseye)
+Filesystem      Size  Used Avail Use% Mounted on
+shm             4.0G     0  4.0G   0% /dev/shm
+Killing docker daemon.
+Waiting for docker daemon to exit... ok
+Removing /dev/shm/rtd.C3bXMY/docker.sock.
+Removing temporary XDG_RUNTIME_DIR /dev/shm/rtd.C3bXMY
+End time:    2023-06-28T10:13:22+02:00

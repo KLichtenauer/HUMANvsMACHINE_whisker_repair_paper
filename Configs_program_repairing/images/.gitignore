@@ -1,0 +1,31 @@
+# NPM
+**/node_modules
+**/dist
+coverage
+*~
+/.nvmrc
+
+# Editor
+/.idea
+/.vscode
+*.DS_Store
+
+# Build
+*/dist
+/playground
+/docs
+
+# Stuff
+/stuff
+*.iml
+
+# Servant specific
+/servant/node_modules
+/servant/tests
+/servant/.tmpWorkingDir
+/servant/*.csv
+/servant/evaluation.js
+/whisker-main/testOutput
+
+# WhiskerNet evaluation
+/whisker-main/src/whisker/whiskerNet/EvaluationScripts

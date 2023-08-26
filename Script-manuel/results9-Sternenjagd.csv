@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize fish,initialize star,initialize jellyfish,initialize pufferfish,fish touch star,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+9-Sternenjagd.sb3,1687694408909,6,None,pass,pass,pass,pass,fail,4,1,0,0,36,31,0.86,0.449

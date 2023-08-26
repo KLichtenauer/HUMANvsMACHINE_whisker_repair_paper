@@ -1,0 +1,1001 @@
+import i18next from 'i18next';
+import locI18next from 'loc-i18next';
+import {DynamicNetworkSuite} from 'whisker-main/src/whisker/whiskerNet/Algorithms/DynamicNetworkSuite';
+import {StateActionRecorder} from 'whisker-main/src/whisker/whiskerNet/Misc/StateActionRecorder';
+import {FileSaver} from "./web-libs";
+
+/* Translation resources */
+const indexDE = require('./locales/de/index.json');
+const indexEN = require('./locales/en/index.json');
+const aboutDE = require('./locales/de/about.json');
+const aboutEN = require('./locales/en/about.json');
+const snippetsDE = require('./locales/de/snippets.json');
+const snippetsEN = require('./locales/en/snippets.json');
+const tutorialDE = require('./locales/de/tutorial.json');
+const tutorialEN = require('./locales/en/tutorial.json');
+const contactDE = require('./locales/de/contact.json');
+const contactEN = require('./locales/en/contact.json');
+const imprintDE = require('./locales/de/imprint.json');
+const imprintEN = require('./locales/en/imprint.json');
+const privacyDE = require('./locales/de/privacy.json');
+const privacyEN = require('./locales/en/privacy.json');
+const footerDE = require('./locales/de/footer.json');
+const footerEN = require('./locales/en/footer.json');
+const headerDE = require('./locales/de/header.json');
+const headerEN = require('./locales/en/header.json');
+const modelEditorDE = require('./locales/de/modelEditor.json');
+const modelEditorEN = require('./locales/en/modelEditor.json');
+
+/* Important libraries */
+const {$} = require('./web-libs');
+
+/* Replace this with the path of whisker's source for now. Will probably be published as a npm module later. */
+const {
+    CoverageGenerator,
+    TestRunner,
+    TAP13Listener,
+    Search,
+    ProjectChromosomeFactory,
+    TAP13Formatter,
+    ProjectChromosome,
+    ModelTester
+} = require('whisker-main');
+
+/* Components */
+const Thread = require('scratch-vm/src/engine/thread');
+const TestTable = require('./components/test-table');
+const TestEditor = require('./components/test-editor');
+const Scratch = require('./components/scratch-stage');
+const FileSelect = require('./components/file-select');
+const Output = require('./components/output');
+const InputRecorder = require('./components/input-recorder');
+const Footer = require('./components/footer');
+const Header = require('./components/header');
+const ModelEditor = require('./components/model-editor');
+
+const {showModal, escapeHtml} = require('./utils.js');
+const Whisker = window.Whisker = {};
+window.$ = $;
+
+/* Acceleration */
+const DEFAULT_ACCELERATION_FACTOR = 1;
+const accSlider = $('#acceleration-factor').slider();
+
+
+const LANGUAGE_OPTION = 'lng';
+const initialParams = new URLSearchParams(window.location.search); // This is only valid for initialization and has to be retrieved again afterwards
+const initialLanguage = initialParams.get(LANGUAGE_OPTION); // This is only valid for initialization and has to be retrieved again afterwards
+
+let testsRunning = false;
+
+const loadModelFromString = function (models) {
+    try {
+        Whisker.modelTester.load(models);
+    } catch (err) {
+        Whisker.outputLog.println(`ERROR: ${err.message}`);
+        console.error(err);
+        const message = `${err.name}: ${err.message}`;
+        showModal('Modal Loading', `<div class="mt-1"><pre>${escapeHtml(message)}</pre></div>`);
+        throw err;
+    }
+
+    if (Whisker.modelTester.userModelsLoaded()) {
+        $('#model-user-loaded').text(i18next.t('model-output-user-model'));
+    } else {
+        $('#model-user-loaded').text(i18next.t('model-output-no-user-model'));
+    }
+};
+
+const loadTestsFromString = async function (string) {
+    // Check for Neuroevolution TestSuites.
+    if ((`${string}`.includes('"Static":') && `${string}`.includes('"Dynamic":')) ||
+        (`${string}`.toLowerCase().includes('network') && `${string}`.toLowerCase().includes('nodes'))) {
+        const tests = `${string}`;
+        Whisker.tests = tests;
+        Whisker.testEditor.setValue(string);
+        return tests;
+    }
+    // Manually generated test suite or test suite generated through search algorithms.
+    let tests;
+    try {
+        /*
+         * Evil hack: Every Whisker test is a CommonJS module. As such, it contains a "module.exports"
+         * declaration at the end. In the browser, CommonJS modules usually cannot be used as the global
+         * "module" object does not exist there. For our purposes, we work around this by creating an empty
+         * dummy object called "module", letting the test set the "module.exports" property, and return that as
+         * result of evaluating the test.
+         */
+        /* eslint-disable-next-line no-eval */
+        // IMPORTANT!!!
+        // DO NOT CHANGE THE FORMATTING OF THE NEXT LINE OR CODE WILL BREAK!                                    (lol)
+        // For some parts of Whisker (e.g., program repair) it is important not to change the stack traces of Whisker
+        // tests, which would be the case if, e.g., line breaks were added in the code below to put every statement
+        // on one line.
+        // @formatter:off
+        tests = eval(`(function () { const module = Object.create(null); ${string}; return module.exports; })();`);
+        // @formatter:on
+    } catch (err) {
+        console.error(err);
+        const message = `${err.name}: ${err.message}`;
+        showModal('Test Loading', `An error occurred while parsing the test code:<br>
+            <div class="mt-1"><pre>${escapeHtml(message)}</pre></div>`);
+        throw err;
+    }
+    tests = TestRunner.convertTests(tests);
+    Whisker.tests = tests;
+    Whisker.testsString = string;
+    Whisker.testEditor.setValue(string);
+    Whisker.testTable.setTests(tests);
+    return tests;
+};
+
+const enableVMRelatedButtons = function () {
+    $('.vm-related').prop('disabled', false);
+};
+
+const runSearch = async function () {
+    _disableVMRelatedButtons('#run-search');
+    accSlider.slider('disable');
+    Whisker.scratch.stop();
+    const projectName = Whisker.projectFileSelect.getName();
+    const configName =
+        Whisker.configFileSelect.hasName() ?
+            Whisker.configFileSelect.getName() :
+            'mio.json';
+    console.log(`Whisker-Web: loading project ${projectName}`);
+    const project = await Whisker.projectFileSelect.loadAsArrayBuffer();
+    Whisker.outputRun.clear();
+    Whisker.outputLog.clear();
+    await Whisker.scratch.vm.loadProject(project);
+    const config = await Whisker.configFileSelect.loadAsString();
+    const accelerationFactor = $('#acceleration-value').text();
+    const seed = document.getElementById('seed').value;
+    const groundTruth = document.querySelector('#container').groundTruth;
+
+    const [tests, testListWithSummary, csv] = await Whisker.search.run(Whisker.scratch.vm, Whisker.scratch.project,
+        projectName, config, configName, accelerationFactor, seed, groundTruth);
+    // Prints uncovered blocks summary and csv summary separated by a newline
+    Whisker.outputLog.print(`${testListWithSummary}\n`);
+    Whisker.outputLog.print(csv);
+    accSlider.slider('enable');
+    _enableVMRelatedButtons();
+    return tests;
+};
+
+const _runTestsWithCoverage = async function (vm, project, tests) {
+    if (testsRunning) {
+        testsRunning = false;
+        _showRunIcon();
+        _enableVMRelatedButtons();
+        Whisker.scratch.stop();
+        Whisker.testRunner.abort();
+        Whisker.testTable.updateAfterAbort();
+    } else {
+        _disableVMRelatedButtons('#run-all-tests');
+        testsRunning = true;
+        _showStopIcon();
+        $('#green-flag').prop('disabled', true);
+        $('#reset').prop('disabled', true);
+        $('#record').prop('disabled', true);
+
+        // Activate listener for execution trace record at the end of a test run.
+        const traceExecution = document.querySelector('#container').executionTrace;
+        if (traceExecution) {
+            Whisker.testRunner.on(TestRunner.RUN_END, () => {
+                const blob = new Blob([JSON.stringify(Whisker.testRunner.executionTrace)],
+                    {type: 'application/json;charset=utf-8'});
+                FileSaver.saveAs(blob, `ExecutionTrace-${Whisker.projectFileSelect.getName()}.json`);
+            });
+        }
+
+        let summary;
+        let csvResults;
+        let mutantPrograms;
+        let coverage;
+        let coveragePerTest;
+        let coverageModels = {};
+        accSlider.slider('disable');
+        const projectName = Whisker.projectFileSelect.getName();
+        const accelerationFactor = $('#acceleration-value').text();
+        const seed = document.getElementById('seed').value;
+        const setMutators = document.querySelector('#container').mutators;
+        const mutators = !setMutators || setMutators === '' ? ['NONE'] : setMutators;
+        const mutationBudget = document.querySelector('#container').mutationBudget;
+        const maxMutants = document.querySelector('#container').maxMutants;
+        let duration = Number(document.querySelector('#model-duration').value);
+        if (duration) {
+            duration = duration * 1000;
+        }
+        const repetitions = Number(document.querySelector('#model-repetitions').value);
+        const caseSensitive = $('#model-case-sensitive').is(':checked');
+
+        try {
+            await Whisker.scratch.vm.loadProject(project);
+            CoverageGenerator.prepareClasses({Thread}, Whisker.testRunner, traceExecution);
+            CoverageGenerator.prepareVM(vm);
+
+            [summary, csvResults, mutantPrograms, coveragePerTest] = await Whisker.testRunner.runTests(vm, project, tests,
+                Whisker.modelTester, {accelerationFactor, seed, projectName, mutators, mutationBudget, maxMutants},
+                {duration, repetitions, caseSensitive});
+            coverage = CoverageGenerator.getCoverage();
+            Whisker.outputLog.println(csvResults);
+
+            // Set the mutants in the output log from where we can download them later.
+            if (mutantPrograms && mutantPrograms.length > 0) {
+                Whisker.outputRun.setScratch(Whisker.scratch);
+                Whisker.outputRun.mutants = mutantPrograms;
+            }
+
+            if (Whisker.modelTester.programModelsLoaded()) {
+                coverageModels = Whisker.modelTester.getTotalCoverage();
+            }
+
+            if (typeof window.messageServantCallback === 'function') {
+                const coveredBlockIdsPerSprite =
+                    [...coverage.coveredBlockIdsPerSprite].map(elem => ({key: elem[0], values: [...elem[1]]}));
+                const blockIdsPerSprite =
+                    [...coverage.blockIdsPerSprite].map(elem => ({key: elem[0], values: [...elem[1]]}));
+
+                const modelCoverage = [];
+                if (Whisker.modelTester.programModelsLoaded()) {
+                    for (const modelName in coverageModels) {
+                        const content = [];
+                        const elem = coverageModels[modelName];
+                        content.push({key: 'covered', values: elem.covered});
+                        content.push({key: 'total', values: elem.total});
+                        content.push({key: 'missedEdges', values: elem.missedEdges});
+                        modelCoverage.push({key: modelName, values: content});
+                    }
+                }
+                const serializableCoverageObject = {coveredBlockIdsPerSprite, blockIdsPerSprite};
+                const serializableModelCoverage = {modelCoverage};
+                window.messageServantCallback({serializableCoverageObject, summary, serializableModelCoverage});
+            }
+
+            CoverageGenerator.restoreClasses({Thread});
+        } finally {
+            _showRunIcon();
+            enableVMRelatedButtons();
+            accSlider.slider('enable');
+            testsRunning = false;
+        }
+
+        if (summary === null) {
+            return coveragePerTest;
+        }
+
+        const formattedSummary = TAP13Formatter.formatSummary(summary);
+        const formattedCoverage = TAP13Formatter.formatCoverage(coverage.getCoveragePerSprite());
+
+        const summaryString = TAP13Formatter.extraToYAML({summary: formattedSummary});
+        const coverageString = TAP13Formatter.extraToYAML({coverage: formattedCoverage});
+
+        let modelCoverageString = '';
+
+        // Add model coverage if we have model-based results
+        if (Object.keys(coverageModels).length > 0) {
+            const formattedModelCoverage = TAP13Formatter.formatModelCoverage(coverageModels);
+            modelCoverageString = TAP13Formatter.extraToYAML({modelCoverage: formattedModelCoverage});
+        }
+
+        Whisker.outputRun.println([
+            summaryString,
+            coverageString,
+            modelCoverageString
+        ].join('\n'));
+
+        return coveragePerTest;
+    }
+};
+
+window.Whisker.abortTestRun = function () {
+    Whisker.scratch.stop();
+    Whisker.outputRun.clear();
+    Whisker.outputLog.clear();
+};
+
+window.Whisker.runTestsForRepair = async function (timeoutPerTest = 0) {
+    Whisker.abortTestRun();
+    const project = await Whisker.projectFileSelect.loadAsArrayBuffer(0);
+    return await _runTestsWithCoverage(Whisker.scratch.vm, project, Whisker.tests, Whisker.testRunner);
+};
+
+const runTests = async function (tests) {
+    Whisker.abortTestRun();
+    const project = await Whisker.projectFileSelect.loadAsArrayBuffer();
+    await _runTestsWithCoverage(Whisker.scratch.vm, project, tests, Whisker.testRunner);
+};
+
+const runAllTests = async function () {
+    $('#run-all-tests').tooltip('hide');
+    // Long tests, for example saved networks in Dynamic Suites, can take some time to be loaded;
+    // Hence we wait a second before checking if tests are loaded.
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    if ((Whisker.tests === undefined || Whisker.tests.length === 0) && !Whisker.modelTester.someModelLoaded()) {
+        showModal(i18next.t('test-execution'), i18next.t('no-tests'));
+        return;
+    } else if (Whisker.projectFileSelect === undefined || Whisker.projectFileSelect.length() === 0) {
+        showModal(i18next.t('test-execution'), i18next.t('no-project'));
+        return;
+    }
+    Whisker.scratch.stop();
+    Whisker.outputRun.clear();
+    Whisker.outputLog.clear();
+
+    // Dynamic Suite
+    if ((`${Whisker.tests}`.toLowerCase().includes('network') && `${Whisker.tests}`.toLowerCase().includes('nodes'))) {
+        let coverage;
+        try {
+            await Whisker.scratch.vm.loadProject(Whisker.scratch.project);
+            CoverageGenerator.prepareClasses({Thread}, Whisker.testRunner, false);
+            CoverageGenerator.prepareVM(Whisker.scratch.vm);
+
+            const properties = {};
+            const setMutators = document.querySelector('#container').mutators;
+            const mutators = !setMutators || setMutators === '' ? ['NONE'] : setMutators;
+            const maxMutants = document.querySelector('#container').maxMutants;
+            properties.projectName = Whisker.projectFileSelect.getName();
+            properties.testName = Whisker.testFileSelect.getName();
+            properties.acceleration = $('#acceleration-value').text();
+            properties.log = true;
+            properties.seed = document.getElementById('seed').value;
+            properties.mutators = mutators;
+            properties.maxMutants = maxMutants;
+            properties.activationTraceRepetitions = document.querySelector('#container').activationTraceRepetitions;
+
+            const dynamicSuite = new DynamicNetworkSuite(Whisker.scratch.project, Whisker.scratch.vm, Whisker.tests,
+                properties);
+            const [csv, mutantPrograms] = await dynamicSuite.execute();
+
+            // Set the mutants in the output log from where we can download it later.
+            if (mutantPrograms.length > 0) {
+                Whisker.outputRun.setScratch(Whisker.scratch);
+                Whisker.outputRun.setMutants(mutantPrograms);
+            }
+
+            coverage = CoverageGenerator.getCoverage();
+            CoverageGenerator.restoreClasses({Thread});
+            Whisker.outputLog.println(csv);
+        } finally {
+            _showRunIcon();
+            enableVMRelatedButtons();
+            accSlider.slider('enable');
+            testsRunning = false;
+        }
+
+        if (!coverage) {
+            return;
+        }
+
+        const formattedCoverage = TAP13Formatter.formatCoverage(coverage.getCoveragePerSprite());
+        const coverageString = TAP13Formatter.extraToYAML({coverage: formattedCoverage});
+
+        Whisker.outputRun.println([
+            coverageString
+        ].join('\n'));
+    } else { // Static Suite
+        for (let i = 0; i < Whisker.projectFileSelect.length(); i++) {
+            const project = await Whisker.projectFileSelect.loadAsArrayBuffer(i);
+            Whisker.outputRun.println(`# project: ${Whisker.projectFileSelect.getName(i)}`);
+            Whisker.outputLog.println(`# project: ${Whisker.projectFileSelect.getName(i)}`);
+            await _runTestsWithCoverage(Whisker.scratch.vm, project, Whisker.tests);
+            Whisker.outputRun.println();
+            Whisker.outputLog.println();
+        }
+    }
+};
+
+const buildVariant = async function () {
+    const accelerationFactor = Number(document.querySelector('#acceleration-factor').value);
+
+    Whisker.scratch.stop();
+    Whisker.outputRun.clear();
+    Whisker.outputLog.clear();
+    Whisker.outputFl.clear();
+
+    const project = Whisker.projectVariant ?
+        ProjectChromosome.deserialize(Whisker.projectVariant).project.getArrayBuffer() :
+        await Whisker.projectFileSelect.loadAsArrayBuffer();
+
+    try {
+        setTimeout((window) => {
+            if (typeof window.messageServantCallback === 'function') {
+                console.log('timeout reached');
+                Whisker.testRunner.abort();
+                window.messageServantCallback({projectVariant: null});
+                return;
+            }
+            Whisker.outputFl.println('Variant built');
+        }, 180000, window);
+        const projectVariant = await ProjectChromosomeFactory.buildVariant(
+            project, Whisker.testRunner, Whisker.scratch.vm, CoverageGenerator, Whisker.tests, Thread, {accelerationFactor}
+        );
+
+        if (typeof window.messageServantCallback === 'function') {
+            if (!projectVariant) {
+                console.log('no variant');
+                window.messageServantCallback({projectVariant: null});
+            } else {
+                const serlVariant = projectVariant.serialize();
+                console.log('--- serlVariant:\n', serlVariant);
+                window.messageServantCallback({projectVariant: serlVariant});
+            }
+        }
+
+        Whisker.outputFl.println('Variant built');
+    } catch (e) {
+        console.error('catch', e);
+        if (typeof window.messageServantCallback === 'function') {
+            window.messageServantCallback({projectVariant: null});
+        }
+        Whisker.outputFl.println('Variant built');
+    }
+};
+
+const initScratch = function () {
+    Whisker.scratch = new Scratch(document.querySelector('#scratch-stage'));
+};
+
+const initComponents = function () {
+    Whisker.outputRun = new Output($('#output-run')[0]);
+    Whisker.outputRun.hide();
+    Whisker.outputLog = new Output($('#output-log')[0]);
+    Whisker.outputLog.hide();
+    Whisker.outputFl = new Output($('#output-fl')[0]);
+
+    Whisker.testEditor = new TestEditor($('#test-editor')[0], loadTestsFromString);
+    Whisker.testEditor.setDefaultValue();
+    Whisker.testEditor.show();
+
+    Whisker.projectFileSelect = new FileSelect($('#fileselect-project')[0],
+        fileSelect => fileSelect.loadAsArrayBuffer()
+            .then(project => Whisker.scratch.loadProject(project)));
+    Whisker.testFileSelect = new FileSelect($('#fileselect-tests')[0],
+        fileSelect => fileSelect.loadAsString()
+            .then(string => loadTestsFromString(string)));
+    Whisker.modelFileSelect = new FileSelect($('#fileselect-models')[0],
+        fileSelect => fileSelect.loadAsString().then(string => loadModelFromString(string)));
+
+    Whisker.testRunner = new TestRunner();
+    Whisker.testRunner.on(TestRunner.TEST_LOG,
+        (test, message) => Whisker.outputLog.println(`[${test.name}] ${message}`));
+    Whisker.testRunner.on(TestRunner.TEST_ERROR, result => console.error(result.error));
+
+    Whisker.testTable = new TestTable($('#test-table')[0], runTests, Whisker.testRunner);
+    Whisker.testTable.setTests([]);
+    Whisker.testTable.show();
+
+    Whisker.modelTester = new ModelTester.ModelTester();
+
+    Whisker.tap13Listener = new TAP13Listener(Whisker.testRunner, Whisker.modelTester,
+        Whisker.outputRun.println.bind(Whisker.outputRun));
+
+    Whisker.inputRecorder = new InputRecorder(Whisker.scratch);
+    Whisker.stateActionRecorder = new StateActionRecorder(Whisker.scratch);
+
+    Whisker.search = new Search.Search(Whisker.scratch.vm);
+    Whisker.configFileSelect = new FileSelect($('#fileselect-config')[0],
+        fileSelect => fileSelect.loadAsArrayBuffer());
+
+
+    Whisker.modelEditor = new ModelEditor(Whisker.modelTester);
+
+    accSlider.slider('setValue', DEFAULT_ACCELERATION_FACTOR);
+    $('#acceleration-value').text(DEFAULT_ACCELERATION_FACTOR);
+};
+
+const initEvents = function () {
+    $('#acceleration-factor')
+        .on('slide', slideEvt => {
+            $('#acceleration-value').text(slideEvt.value);
+        })
+        .on('change', clickEvt => {
+            $('#acceleration-value').text(clickEvt.value.newValue);
+        });
+    $('#green-flag').on('click', () => {
+        if (Whisker.projectFileSelect === undefined || Whisker.projectFileSelect.length() === 0) {
+            showModal(i18next.t('test-generation'), i18next.t('no-project'));
+        } else {
+            Whisker.scratch.greenFlag();
+        }
+        if (Whisker.inputRecorder.isRecording()) {
+            Whisker.inputRecorder.greenFlag();
+        }
+    });
+    $('#stop-scratch').on('click', () => {
+        Whisker.scratch.stop();
+        if (Whisker.inputRecorder.isRecording()) {
+            Whisker.inputRecorder.stop();
+        }
+        if (Whisker.stateActionRecorder.isRecording){
+            Whisker.stateActionRecorder.onStopAll();
+        }
+    });
+    $('#reset').on('click', () => {
+        $('#reset').tooltip('hide');
+        if (Whisker.tests === undefined || Whisker.tests.length === 0) {
+            showModal(i18next.t('test-execution'), i18next.t('no-tests'));
+        } else if (Whisker.projectFileSelect === undefined || Whisker.projectFileSelect.length() === 0) {
+            showModal(i18next.t('test-execution'), i18next.t('no-project'));
+        } else {
+            Whisker.scratch.reset().then();
+        }
+    });
+    $('#run-all-tests').on('click', runAllTests);
+    $('#build-variant').on('click', buildVariant);
+
+    Whisker.inputRecorder.on('startRecording', () => {
+        $('#record')
+            .removeClass('btn-outline-danger')
+            .addClass('btn-danger')
+            .text(i18next.t('stop-record'));
+    });
+    Whisker.inputRecorder.on('stopRecording', () => {
+        $('#record')
+            .removeClass('btn-danger')
+            .addClass('btn-outline-danger')
+            .text(i18next.t('start-record'));
+    });
+    $('#record').on('click', () => {
+        $('#record').tooltip('hide');
+        if (document.querySelector('#container').stateActionRecorder){
+            if (Whisker.stateActionRecorder.isRecording) {
+                Whisker.inputRecorder.emit('stopRecording');
+                Whisker.stateActionRecorder.stopRecording();
+                Whisker.scratch.disableInput();
+
+                // Download the recording.
+                const recording = Whisker.stateActionRecorder.getRecord();
+                const blob = new Blob([JSON.stringify(recording)], {type: 'application/json;charset=utf-8'});
+                FileSaver.saveAs(blob, `Recording-${Whisker.projectFileSelect.getName()}.json`);
+            } else {
+                Whisker.inputRecorder.emit('startRecording');
+                Whisker.configFileSelect.loadAsString().then(config => Whisker.stateActionRecorder.startRecording(config));
+                Whisker.scratch.enableInput();
+            }
+        } else if (Whisker.inputRecorder.isRecording()) {
+            _enableVMRelatedButtons();
+            Whisker.inputRecorder.stopRecording();
+            Whisker.scratch.disableInput();
+        } else {
+            _disableVMRelatedButtons('.record-related');
+            Whisker.scratch.enableInput();
+            Whisker.inputRecorder.startRecording();
+        }
+    });
+
+    const modelLog = msg => {
+        Whisker.outputLog.println(msg);
+    };
+    const modelWarning = msg => {
+        Whisker.outputLog.println(`MODEL WARNING: ${msg}`);
+    };
+    const modelCoverage = coverage => {
+        const formattedModelCoverage = TAP13Formatter.formatModelCoverageLastRun(coverage);
+        Whisker.outputLog.println(TAP13Formatter.extraToYAML({modelCoverageLastRun: formattedModelCoverage}));
+    };
+    const modelCheckbox = $('#model-logs-checkbox');
+    modelCheckbox.prop('checked', true);
+    Whisker.modelTester.on(ModelTester.ModelTester.MODEL_LOG, modelLog);
+    Whisker.modelTester.on(ModelTester.ModelTester.MODEL_LOG_COVERAGE, modelCoverage);
+    Whisker.modelTester.on(ModelTester.ModelTester.MODEL_LOG_MISSED_EDGES, edges =>
+        Whisker.outputLog.println(TAP13Formatter.extraToYAML(edges)));
+    Whisker.modelTester.on(ModelTester.ModelTester.MODEL_WARNING, modelWarning);
+    modelCheckbox.on('change', event => {
+        if ($(event.target).is(':checked')) {
+            Whisker.modelTester.on(ModelTester.ModelTester.MODEL_LOG, modelLog);
+            Whisker.modelTester.on(ModelTester.ModelTester.MODEL_LOG_COVERAGE, modelCoverage);
+            Whisker.modelTester.on(ModelTester.ModelTester.MODEL_WARNING, modelWarning);
+        } else {
+            Whisker.modelTester.off(ModelTester.ModelTester.MODEL_LOG, modelLog);
+            Whisker.modelTester.off(ModelTester.ModelTester.MODEL_LOG_COVERAGE, modelCoverage);
+            Whisker.modelTester.off(ModelTester.ModelTester.MODEL_WARNING, modelWarning);
+        }
+    });
+    $('#toggle-advanced').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#scratch-controls');
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#scratch-controls').hide();
+        }
+    });
+
+    $('#toggle-repair').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#repair-controls');
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#repair-controls').hide();
+        }
+    });
+
+    $('#toggle-test-editor').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#test-editor-div');
+            Whisker.testEditor.show();
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#test-editor-div').hide();
+        }
+    });
+    $('#toggle-model-editor').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#model-editor');
+            Whisker.modelEditor.reposition();
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#model-editor').hide();
+        }
+    });
+    $('#toggle-tap').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#output-run');
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#output-run').hide();
+        }
+    });
+    $('#toggle-log').on('change', event => {
+        if ($(event.target).is(':checked')) {
+            $(event.target)
+                .parent()
+                .addClass('active');
+            _showAndJumpTo('#output-log');
+        } else {
+            $(event.target)
+                .parent()
+                .removeClass('active');
+            $('#output-log').hide();
+        }
+    });
+    $('#run-search')
+        .click('click', () => {
+            if (Whisker.projectFileSelect === undefined || Whisker.projectFileSelect.length() === 0) {
+                showModal(i18next.t('test-generation'), i18next.t('no-project'));
+            } else {
+                $('#run-search').hide();
+                $('#search-running').show();
+                const tests = runSearch();
+                tests.then(
+                    result => {
+                        loadTestsFromString(result).then();
+                        _jumpTo('#test-table');
+                        $('#run-search').show();
+                        $('#search-running').hide();
+                    }
+                );
+            }
+        })
+        .show();
+    $('#search-running').hide();
+    _addFileListeners();
+};
+
+const toggleComponents = function () {
+    if (window.localStorage) {
+        const componentStates = localStorage.getItem('componentStates');
+        if (componentStates) {
+            const [input, accelerationFactor] = JSON.parse(componentStates);
+            if (input) $('#toggle-input').click();
+            if (accelerationFactor) {
+                accSlider.slider('setValue', accelerationFactor);
+                $('#acceleration-value').text(accelerationFactor);
+            }
+        }
+    }
+};
+
+
+const loadHeader = function () {
+    _initLangSelect();
+    localize('#header');
+    if (window.location.href.includes('/html')) {
+        $('#link').attr('href', '../index.html');
+        $('#tutorial').attr('href', 'tutorial.html');
+        $('#contact').attr('href', 'contact.html');
+        $('#about').attr('href', 'about.html');
+        $('#small-logo').attr('src', '../assets/whisker-text-logo.png');
+        $('#banner').attr('src', '../assets/whiskerHeader.png');
+    } else {
+        $('#link').attr('href', 'index.html');
+        $('#tutorial').attr('href', 'html/tutorial.html');
+        $('#contact').attr('href', 'html/contact.html');
+        $('#about').attr('href', 'html/about.html');
+        $('#small-logo').attr('src', 'assets/whisker-text-logo.png');
+        $('#banner').attr('src', 'assets/whiskerHeader.png');
+    }
+    $('#tutorial').attr('target', '_blank');
+    $('#about').attr('target', '_blank');
+    $('#form-lang').on('change', () => {
+        $('[data-toggle="tooltip"]').tooltip('dispose');
+        const lng = $('#lang-select').val();
+        _translateTestTableTooltips(i18next.language, lng); // This has to be executed before the current language is changed
+        const params = new URLSearchParams(window.location.search);
+        params.set(LANGUAGE_OPTION, lng);
+        window.history.pushState('', '', `?${params.toString()}`);
+        i18next.changeLanguage(lng).then(_updateLang());
+    });
+    $('.nav-link').on('click', event => {
+        const lng = $('#lang-select').val();
+        const href = event.target.getAttribute('href');
+        if (href) {
+            location.href = `${href}?lng=${lng}`;
+            event.preventDefault();
+        }
+    });
+};
+
+const loadFooter = function () {
+    localize('#footer');
+    if (window.location.href.includes('/html')) {
+        $('#imprint').attr('href', './imprint.html');
+        $('#privacy').attr('href', './privacy.html');
+        $('#logo-img').attr('src', '../assets/uniPassauLogo.png');
+    } else {
+        $('#imprint').attr('href', 'html/imprint.html');
+        $('#privacy').attr('href', 'html/privacy.html');
+        $('#logo-img').attr('src', 'assets/uniPassauLogo.png');
+    }
+};
+
+$(document)
+    .ready(() => {
+        $('#scratch-controls').hide();
+        initScratch();
+        initComponents();
+        initEvents();
+        toggleComponents();
+    });
+
+window.onload = function () {
+    loadHeader();
+    loadFooter();
+};
+
+window.onbeforeunload = function () {
+    if (window.localStorage) {
+        const componentStates = [
+            $('#toggle-input').is(':checked'),
+            accSlider.slider('getValue')
+        ];
+        window.localStorage.setItem('componentStates', JSON.stringify(componentStates));
+    }
+    if (location.href.includes('index')) {
+        return ''; // Creates a popup warning that informs the user about potential loss of data (project, tests, etc.)
+    }
+};
+
+const localize = locI18next.init(i18next, {
+    selectorAttr: 'data-i18n', // selector for translating elements
+    targetAttr: 'i18n-target',
+    optionsAttr: 'i18n-options',
+    useOptionsAttr: false,
+    parseDefaultValueFromContent: true
+});
+
+i18next
+    .init({
+        whitelist: ['de', 'en'],
+        nonExplicitWhitelist: true,
+        lng: initialLanguage,
+        fallbackLng: 'de',
+        debug: false,
+        ns: ['index', 'about', 'snippets', 'tutorial', 'contact', 'imprint', 'privacy', 'footer', 'header', 'modelEditor'],
+        defaultNS: 'index',
+        interpolation: {
+            escapeValue: false
+        },
+        resources: {
+            de: {
+                index: indexDE,
+                about: aboutDE,
+                snippets: snippetsDE,
+                tutorial: tutorialDE,
+                contact: contactDE,
+                imprint: imprintDE,
+                privacy: privacyDE,
+                footer: footerDE,
+                header: headerDE,
+                modelEditor: modelEditorDE
+            },
+            en: {
+                index: indexEN,
+                about: aboutEN,
+                snippets: snippetsEN,
+                tutorial: tutorialEN,
+                contact: contactEN,
+                imprint: imprintEN,
+                privacy: privacyEN,
+                footer: footerEN,
+                header: headerEN,
+                modelEditor: modelEditorEN
+            }
+        }
+    }, () => {
+        _updateLang();
+    }).then();
+
+function _showRunIcon() {
+    $('#run-tests-icon').show();
+    $('#stop-tests-icon').hide();
+}
+
+function _showStopIcon() {
+    $('#run-tests-icon').hide();
+    $('#stop-tests-icon').show();
+}
+
+const _enableVMRelatedButtons = function () {
+    $('.vm-related').prop('disabled', false);
+};
+
+const _disableVMRelatedButtons = function (exception) {
+    $(`.vm-related:not(${exception})`).prop('disabled', true);
+};
+
+function _showAndJumpTo(elem) {
+    $(elem).show();
+    _jumpTo(elem);
+}
+
+function _jumpTo(elem) {
+    location.href = '#'; // this line is required to work around a bug in WebKit (Chrome / Safari) according to stackoverflow
+    location.href = elem;
+    window.scrollBy(0, -100); // respect header size
+}
+
+const _addFileListeners = function () {
+    $('#fileselect-config').on('change', event => {
+        const fileName = Whisker.configFileSelect.getName();
+        $(event.target).parent()
+            .removeAttr('data-i18n')
+            .attr('title', fileName);
+        const label = document.querySelector('#fileselect-config').parentElement.getElementsByTagName('label')[0];
+        _showTooltipIfTooLong(label, event);
+    });
+    $('#fileselect-project').on('change', event => {
+        const fileName = Whisker.projectFileSelect.getName();
+        $(event.target).parent()
+            .removeAttr('data-i18n')
+            .attr('title', fileName);
+        const label = document.querySelector('#fileselect-project').parentElement.getElementsByTagName('label')[0];
+        _showTooltipIfTooLong(label, event);
+    });
+    $('#fileselect-tests').on('change', event => {
+        const fileName = Whisker.testFileSelect.getName();
+        $(event.target).parent()
+            .removeAttr('data-i18n')
+            .attr('title', fileName);
+        const label = document.querySelector('#fileselect-tests').parentElement.getElementsByTagName('label')[0];
+        _showTooltipIfTooLong(label, event);
+    });
+    $('#fileselect-models').on('change', event => {
+        const fileName = Whisker.modelFileSelect.getName();
+        $(event.target).parent()
+            .removeAttr('data-i18n')
+            .attr('title', fileName);
+        const label = document.querySelector('#fileselect-models').parentElement.getElementsByTagName('label')[0];
+        _showTooltipIfTooLong(label, event);
+    });
+};
+
+const _showTooltipIfTooLong = function (label, event) {
+    $(event.target).parent()
+        .tooltip('dispose');
+    if (label.scrollWidth > label.offsetWidth) {
+        $(event.target).parent()
+            .tooltip({animation: true});
+        setTimeout(() => {
+            $(event.target).parent()
+                .tooltip('hide');
+        }, 2000);
+    }
+};
+
+const _initLangSelect = function () {
+    const newLabel = document.createElement('label');
+    let html = '<select id="lang-select">';
+    const lngs = ['de', 'en'];
+    let i;
+    for (i = 0; i < lngs.length; i++) {
+        html += `<option value='${lngs[i]}' `;
+        if ((initialLanguage != null && lngs[i] === initialLanguage) || lngs[i] === 'de') {
+            html += 'selected';
+        }
+        html += ` data-i18n="${lngs[i]}">${i18next.t(lngs[i])}</option>`;
+    }
+    html += '</select>';
+    newLabel.innerHTML = html;
+    document.querySelector('#form-lang').appendChild(newLabel);
+};
+
+function _translateTestTableTooltips(oldLanguage, newLanguage) {
+    const oldLangData = i18next.getDataByLanguage(oldLanguage);
+    const oldIndexData = oldLangData.index;
+    const newLangData = i18next.getDataByLanguage(newLanguage);
+    const newIndexData = newLangData.index;
+    $('.tooltip-sign-text').html(function () {
+        _translateTooltip(this, oldIndexData, newIndexData);
+    });
+}
+
+function _translateTooltip(tooltipElement, oldData, newData) {
+    const key = _getKeyByValue(oldData, tooltipElement.innerHTML);
+    tooltipElement.innerHTML = newData[key];
+}
+
+function _getKeyByValue(langData, value) {
+    return Object.keys(langData).find(key => langData[key] === value);
+}
+
+function _updateLang() {
+    localize('#body');
+    $('[data-toggle="tooltip"]').tooltip();
+    if (Whisker.testTable) {
+        Whisker.testTable.hideTestDetails();
+    }
+}
+
+$('#form-lang').on('change', () => {
+    $('[data-toggle="tooltip"]').tooltip('dispose');
+    const lng = $('#lang-select').val();
+    _translateTestTableTooltips(i18next.language, lng); // This has to be executed before the current language is changed
+    const params = new URLSearchParams(window.location.search);
+    params.set(LANGUAGE_OPTION, lng);
+    window.history.pushState('', '', `?${params.toString()}`);
+    i18next.changeLanguage(lng).then(_updateLang());
+});
+
+$('.nav-link').on('click', event => {
+    const lng = $('#lang-select').val();
+    const href = event.target.getAttribute('href');
+    if (href) {
+        location.href = `${href}?lng=${lng}`;
+        event.preventDefault();
+    }
+    _updateFilenameLabels();
+});
+
+function _updateFilenameLabels() {
+    if (Whisker.projectFileSelect && Whisker.projectFileSelect.hasName()) {
+        $('#project-label').html(Whisker.projectFileSelect.getName());
+    }
+    if (Whisker.testFileSelect && Whisker.testFileSelect.hasName()) {
+        $('#tests-label').html(Whisker.testFileSelect.getName());
+    }
+    if (Whisker.configFileSelect && Whisker.configFileSelect.hasName()) {
+        $('#config-label').html(Whisker.configFileSelect.getName());
+    }
+    if (Whisker.modelFileSelect && Whisker.modelFileSelect.hasName()) {
+        $('#model-label').html(Whisker.modelFileSelect.getName());
+    }
+}
+
+
+export {i18next as i18n};

@@ -1,0 +1,58 @@
+whisker v0.8.0
+Running subcommand "generate"
+Command line options: {
+  acceleration: 10,
+  seed: '1687937286599',
+  headless: true,
+  configPath: '/configs/mio.json-repetition-4.json',
+  testDownloadDir: '/results',
+  addRandomInputs: 10,
+  scratchPath: { path: '/projects/3-HappyNewYear.sb3', isDirectory: false },
+  csvFile: '/results/output.csv',
+  consoleForwarded: true,
+  liveLog: true,
+  whiskerUrl: 'file:///whisker/whisker-web/dist/index.html'
+}
+Whisker-Web: Web Instance Configuration Complete
+ DEBUG:  Executing search 
+
+ INFO:  Forwarded: Whisker-Web: loading project 3-HappyNewYear.sb3
+ INFO:  Forwarded: Whisker-Main: Starting Search based algorithm
+ INFO:  Forwarded: JSHandle@object
+ INFO:  Forwarded: Seeding the RNG to 1687937286599
+ INFO:  Forwarded: Seeding the Scratch-VM to 1687937286599
+ INFO:  Forwarded: Whisker-Main: test generation
+ INFO:  Forwarded: DEBUG: Found test for goal: ,`J8IV)0DcI6%8neH9t*-Einhorn of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: l3h[s.JF9;lbC/(*FQ1}-Einhorn of type looks_sayforsecs
+ INFO:  Forwarded: DEBUG: Found test for goal: z9hulp:vc3x].piVtIF$-Einhorn of type looks_say
+ INFO:  Forwarded: DEBUG: Found test for goal: -=d]YY6^o,).~l]*vTux-Einhorn of type looks_changesizeby
+ INFO:  Forwarded: DEBUG: Found test for goal: luLU+*I%Z}zdz{z[4a*E-Einhorn of type looks_setsizeto
+ INFO:  Forwarded: DEBUG: Found test for goal: ({/NALMcs_tM:ZpQKSSf-Einhorn of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: G#V6zuY%$-13MJ-|d3Kx-Einhorn of type looks_gotofrontback
+ INFO:  Forwarded: DEBUG: Found test for goal: -X{c`+2v(mL-$%@)nK!s-Einhorn of type looks_gotofrontback
+ INFO:  Forwarded: DEBUG: Found test for goal: vcI]sy7{WU*^2LEth3=W-Luftballon of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: ![^=tN5(;R!;7L.aZ!%(-Luftballon of type control_create_clone_of
+ INFO:  Forwarded: DEBUG: Found test for goal: G/-El+I%`eIpdUNRvtso-Luftballon of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: ;0Mz|YF0+dth[^v2*$vR-Luftballon of type looks_nextcostume
+ INFO:  Forwarded: DEBUG: Found test for goal: Ra-%MI^N*FjV*9^@Q$Oh-Luftballon of type motion_goto
+ INFO:  Forwarded: DEBUG: Found test for goal: {U?ERT!)jmQ#_?EFKU*b-Luftballon of type control_repeat
+ INFO:  Forwarded: DEBUG: Found test for goal: KP~76O|`KD^,.s},4vl9-Luftballon of type control_create_clone_of
+ INFO:  Forwarded: DEBUG: Found test for goal: #]I?{D9DO$$XOah#cIV9-Luftballon of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: #_aSo?jh9LReDji`k5u1-Luftballon of type control_forever
+ INFO:  Forwarded: DEBUG: Found test for goal: s9~|w}f$oI}1:h:Rog/y-Luftballon of type control_start_as_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: UCacECX.Yj41B;P8EM#K-Luftballon of type looks_hide
+ INFO:  Forwarded: DEBUG: Found test for goal: Lyvgpgk]FmVVdmq_K{`=-Luftballon of type looks_show
+ INFO:  Forwarded: DEBUG: Found test for goal: kR$klH!!Z8^d!q#%c%5)-Luftballon of type control_delete_this_clone
+ INFO:  Forwarded: DEBUG: Found test for goal: T{Aw?*yyQ`SGKUvChw*c-Luftballon of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: v5tY^B(Q$9LPZ38-Qbx?-Luftballon of type control_wait
+ INFO:  Forwarded: DEBUG: Found test for goal: @s{D+a9:C/6R)P@w{I9#-Luftballon of type looks_switchcostumeto
+ INFO:  Forwarded: DEBUG: Found test for goal: ?zuYFm2KZvBpe!:@hCv2-Luftballon of type event_whenflagclicked
+ INFO:  Forwarded: DEBUG: Found test for goal: Zt+Z:cvS%a![E;5+2RzS-Luftballon of type data_changevariableby
+ INFO:  Forwarded: DEBUG: Found test for goal: |?1oIbfx5r;8,DXU{K/(-Luftballon of type sensing_resettimer
+ INFO:  Forwarded: DEBUG: Found test for goal: u$=;_^}LkZyOTf?)vvh:-Luftballon of type control_wait_until
+ INFO:  Forwarded: DEBUG: Found test for goal: pS:O@iMU{BP.3;)~eLvr-Luftballon of type data_setvariableto
+ INFO:  Forwarded: DEBUG: Iteration 1, covered goals total: 29/29, open independent goals: 0
+ INFO:  Forwarded: DEBUG: Starting minimization for 1 tests and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Starting minimization for 70 events and a time-limit of Infinity
+ INFO:  Forwarded: DEBUG: Test minimization finished with 68 fewer events and a duration of 471330 ms
+ INFO:  Forwarded: DEBUG: Starting minimization for 70 events and a time-limit of Infinity

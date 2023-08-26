@@ -1,0 +1,2 @@
+projectName,seed,assertions,generationAlgorithm,initialize ball,initialize paddle,initialize computer,initialize out,initialize out computer,set state according to score,passed,failed,error,skip,totalBlocks,coveredBlocks,coverage,duration
+10-Pong.sb3,417,17,None,pass,pass,pass,pass,pass,fail,5,1,0,0,49,31,0.63,0.378
